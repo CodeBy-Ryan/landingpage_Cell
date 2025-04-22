@@ -522,6 +522,12 @@ button {
 
 /* service.html arquivo start */
 
+.logocell {
+  width: 8rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
 .text3 {
   display: flex;
   justify-content: center;
