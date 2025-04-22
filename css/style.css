@@ -519,6 +519,139 @@ button {
 .img-service {
   width: 10rem;
 }
+
+/* service.html arquivo start */
+
+.text3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.services_page {
+  font-family: "Sen", sans-serif;
+}
+
+.services_highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.text2 {
+  margin-top: -40px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.service_item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 220px; /* correto aqui */
+  max-width: 250px;
+}
+
+.service_item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.bi {
+  color: #001431;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service_item h4 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #031846;
+  margin-bottom: 10px;
+}
+
+.service_item p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+.testimonial_box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-left: 5px solid #031846;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.testimonial_box p {
+  font-style: italic;
+}
+
+.mt-51 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.services_taital2 {
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.accordion {
+  width: 50rem;
+}
+
+.card-header {
+  background-color: #e0fdf9;
+}
+
+.card-header .btn {
+  color: #031846;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.card-body {
+  background: #ffffff;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.btn-success,
+.btn-primary {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn-success:hover,
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* service.html arquivo and */
+
 /* services section and */
 
 /* about_section section start */
