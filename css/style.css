@@ -1090,7 +1090,8 @@ textarea#comment::placeholder {
   float: left;
 }
 
-.send_bt a {
+.send_bt a,
+button {
   width: 100%;
   text-align: center;
   font-size: 18px;
@@ -1105,12 +1106,14 @@ textarea#comment::placeholder {
   font-family: "poppins", sans-serif;
 }
 
-.send_bt a:hover {
+.send_bt a,
+button:hover {
   color: #fff;
   background-color: #00c6aa;
 }
 
-.send_bt.active a {
+.send_bt.active a,
+button {
   color: #ffffff;
   background-color: #00c6aa;
 }
@@ -1127,7 +1130,7 @@ textarea#comment::placeholder {
   font-size: 18px;
   color: #28454e;
   background-color: #e0fdf9;
-  padding: 10px 60px;
+  padding: 10px 30px;
   text-transform: uppercase;
   margin-top: 30px;
   display: block;

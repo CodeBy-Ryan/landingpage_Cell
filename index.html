@@ -562,6 +562,20 @@
         </div>
       </div>  -->
       <!-- copyright section end -->
+       <!-- Mensagem de sucesso -->
+<div id="mensagemEnviada" style="display: none;" class="alert alert-success text-center mt-4">
+  Sua mensagem foi enviada com sucesso! Obrigado pelo contato.
+</div>
+
+<script>
+  // Mostrar a mensagem se a URL tiver #sucesso
+  if (window.location.hash === "#sucesso") {
+    const msg = document.getElementById("mensagemEnviada");
+    if (msg) {
+      msg.style.display = "block";
+    }
+  }
+</script>
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
