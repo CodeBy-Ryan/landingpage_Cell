@@ -536,6 +536,10 @@ button {
   width: 100%;
 }
 
+.services_section {
+  margin-bottom: 5rem;
+}
+
 .services_page {
   font-family: "Sen", sans-serif;
 }
@@ -659,6 +663,84 @@ button {
 /* service.html arquivo and */
 
 /* services section and */
+
+/* Seção de Marcas */
+.marcas {
+  overflow: hidden;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  padding: 40px 20px;
+  margin-top: 10rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título das Marcas */
+.titulo-marcas {
+  font-size: 2.2em;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Container da faixa de Logos */
+.logos-track {
+  display: flex;
+  width: max-content;
+  animation: slide-left 25s linear infinite;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo das imagens */
+.logos-track img {
+  height: 180px; /* Aumentando mais a altura das imagens */
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nas imagens */
+.logos-track img:hover {
+  transform: scale(1.1);
+}
+
+/* Animação para mover as imagens (agora sem repetir imediatamente) */
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logos-track img {
+    height: 100px;
+    margin: 0 15px;
+  }
+
+  .titulo-marcas {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-track img {
+    height: 80px;
+    margin: 0 10px;
+  }
+
+  .titulo-marcas {
+    font-size: 1.6em;
+  }
+}
+
+/* marcas section and */
 
 /* about_section section start */
 
