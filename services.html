@@ -216,7 +216,7 @@
          <section class="mt-5 text-center">
             <h2 class="services_taital">Fale Conosco Agora</h2>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/910 086 001"
               class="btn btn-success m-2"
               target="_blank"
             >
@@ -235,7 +235,7 @@
                     <textarea class="massage-bt" placeholder="Mensagem" rows="5" name="message" required></textarea>
                   
                     <!-- Configurações extras -->
-                    <input type="hidden" name="_next" value="/index.html#sucesso" />
+                    <input type="hidden" name="_next" value="about:blank">
 
                     
                     <input type="hidden" name="_captcha" value="false">
@@ -247,10 +247,19 @@
 
                     
                   </form>
+                  
+                  <script>
+                    document.querySelector("form").addEventListener("submit", function () {
+                      setTimeout(function () {
+                        window.location.href = "index.html#sucesso";
+                      }, 1000); // espera 1 segundo antes de redirecionar
+                    });
+                  </script>
+                  
                   <div class="map_main map_container">
                     <div class="map-responsive">
                       <iframe
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6073.210240015243!2d-8.418119885159342!3d41.21235346396309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24895fe1ae29df%3A0x710cb7b68cea2016!2sPedrofone!5e1!3m2!1spt-BR!2sus!4v1745362690412!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         width="600"
                         height="368"
                         frameborder="0"

@@ -563,19 +563,54 @@
       </div>  -->
       <!-- copyright section end -->
        <!-- Mensagem de sucesso -->
-<div id="mensagemEnviada" style="display: none;" class="alert alert-success text-center mt-4">
-  Sua mensagem foi enviada com sucesso! Obrigado pelo contato.
-</div>
+       <div id="mensagemEnviada">
+        ✅ Sua mensagem foi enviada com sucesso! Obrigado pelo contato.
+      </div>
+      <style>
+        #mensagemEnviada {
+          display: none;
+          position: fixed;
+          top: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #d4edda;
+          color: #155724;
+          border: 1px solid #c3e6cb;
+          padding: 16px 24px;
+          border-radius: 8px;
+          font-weight: 500;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+          z-index: 9999;
+          cursor: pointer;
+          transition: opacity 0.3s ease;
+        }
+      
+        #mensagemEnviada.mostrar {
+          display: block;
+        }
+      </style>
 
 <script>
-  // Mostrar a mensagem se a URL tiver #sucesso
+  const msg = document.getElementById("mensagemEnviada");
+
+  // Mostra a mensagem se tiver #sucesso na URL
   if (window.location.hash === "#sucesso") {
-    const msg = document.getElementById("mensagemEnviada");
-    if (msg) {
-      msg.style.display = "block";
-    }
+    msg.classList.add("mostrar");
+
+    // Fecha ao clicar na mensagem
+    msg.addEventListener("click", () => {
+      msg.style.display = "none";
+    });
+
+    // Ou fecha ao clicar em qualquer lugar do site
+    document.addEventListener("click", (e) => {
+      if (e.target !== msg) {
+        msg.style.display = "none";
+      }
+    });
   }
 </script>
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
