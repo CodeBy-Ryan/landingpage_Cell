@@ -210,24 +210,7 @@ button {
 
 /* header section start */
 
-.navbar-brand {
-  z-index: 11;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .navbar-collapse {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; /* ou qualquer cor que quiser */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* sombra leve pra dar destaque */
-  z-index: 10; /* garante que a nav fique sobre os outros elementos */
   padding: 10px 20px;
 }
 
@@ -336,7 +319,7 @@ button {
 .banner_taital {
   width: 100%;
   font-size: 40px;
-  color: #002e92;
+  color: #031846;
   font-weight: 800;
   padding-top: 20px;
 }
@@ -361,7 +344,7 @@ button {
   float: left;
   padding: 8px 10px;
   color: #ffffff;
-  background-color: #002e92;
+  background-color: #031846;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
@@ -390,7 +373,7 @@ button {
   height: 40px;
   opacity: 1;
   font-size: 40px;
-  color: #00c8ac;
+  color: #031846;
 }
 
 #banner_slider .carousel-control-next:focus,
@@ -532,135 +515,7 @@ button {
   position: relative;
   top: -50px;
 }
-
-/* blog section start */
-
-.blog_section {
-  width: 100%;
-  float: left;
-}
-
-.blog_taital {
-  width: 100%;
-  float: left;
-  font-size: 50px;
-  color: #292929;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-}
-
-.blog_section_2 {
-  width: 100%;
-  float: left;
-  padding-top: 60px;
-}
-
-.blog_img {
-  width: 100%;
-  float: left;
-  position: relative;
-}
-
-.blog_img img {
-  min-height: 380px;
-  margin-top: 10px;
-}
-
-.number_text {
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  color: #fff;
-  background-color: #28454e;
-  text-align: center;
-  text-transform: uppercase;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  top: 0px;
-}
-
-.callnow_btn {
-  width: 100%;
-  display: flex;
-  padding-top: 30px;
-}
-
-.chat_bt {
-  width: 170px;
-  float: right;
-}
-
-.chat_bt a {
-  width: 100%;
-  float: left;
-  font-size: 16px;
-  color: #232323;
-  text-align: center;
-  background-color: #e0fdf9;
-  padding: 8px;
-}
-
-.chat_bt a:hover {
-  color: #ffffff;
-  background-color: #28454e;
-}
-
-.call_bt {
-  width: 170px;
-  float: right;
-  margin-left: 20px;
-}
-
-.call_bt a {
-  width: 100%;
-  float: right;
-  font-size: 16px;
-  color: #232323;
-  text-align: center;
-  background-color: #e0fdf9;
-  padding: 8px;
-}
-
-.call_bt a:hover {
-  color: #ffffff;
-  background-color: #28454e;
-}
-
-.call_bt.active a {
-  color: #ffffff;
-  background-color: #28454e;
-}
-
-#main_slider a.carousel-control-prev {
-  left: -80px;
-  top: 150px;
-}
-
-#main_slider a.carousel-control-next {
-  right: -80px;
-  top: 150px;
-}
-
-#main_slider .carousel-control-next,
-#main_slider .carousel-control-prev {
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  font-size: 50px;
-  color: #252525;
-}
-
-#main_slider .carousel-control-next:focus,
-#main_slider .carousel-control-next:hover,
-#main_slider .carousel-control-prev:focus,
-#main_slider .carousel-control-prev:hover {
-  color: #00c8ac;
-}
-
-/* blog section end */
+/* services section and */
 
 /* about_section section start */
 
