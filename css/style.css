@@ -433,9 +433,8 @@ button {
   width: 100%;
   float: left;
   font-size: 40px;
-  color: #232323;
-  font-weight: bold;
-  text-transform: uppercase;
+  color: #031846;
+  font-weight: 700;
 }
 
 .services_text {
@@ -450,13 +449,14 @@ button {
 .readmore_btn {
   width: 170px;
   float: left;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .readmore_btn a {
   width: 100%;
   float: left;
   font-size: 18px;
+  font-weight: 700;
   color: #0f0f0f;
   text-transform: uppercase;
   background-color: #e0fdf9;
@@ -467,7 +467,7 @@ button {
 
 .readmore_btn a:hover {
   color: #ffffff;
-  background-color: #28454e;
+  background-color: #031846;
 }
 
 .services_box {
