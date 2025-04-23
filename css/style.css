@@ -693,6 +693,10 @@ button {
   justify-content: center;
 }
 
+.logos-track img {
+  background: white;
+}
+
 /* Estilo das imagens */
 .logos-track img {
   height: 180px; /* Aumentando mais a altura das imagens */
@@ -712,8 +716,8 @@ button {
   0% {
     transform: translateX(100%);
   }
-  100% {
-    transform: translateX(-100%);
+  50% {
+    transform: translateX(-95%);
   }
 }
 
