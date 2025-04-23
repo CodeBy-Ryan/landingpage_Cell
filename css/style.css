@@ -697,6 +697,23 @@ button {
   background: white;
 }
 
+.about_img img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .about_img img {
+    width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about_img img {
+    width: 220px;
+  }
+}
+
 /* Estilo das imagens */
 .logos-track img {
   height: 180px; /* Aumentando mais a altura das imagens */
@@ -749,7 +766,7 @@ button {
 /* about_section section start */
 
 .about_section {
-  width: 100%;
+  width: 115%;
   float: left;
 }
 
@@ -757,7 +774,7 @@ button {
   width: 100%;
   float: left;
   padding: 180px 0px 181px 115px;
-  background-color: #e0fdf9;
+  background-color: #1f8ad127;
   height: auto;
   background-size: 100%;
 }
@@ -772,9 +789,9 @@ button {
 }
 
 .about_text {
-  width: 60%;
+  width: 100%;
   float: left;
-  font-size: 20px;
+  font-size: 40px;
   color: #4c4c4b;
   margin: 0px;
   padding-top: 20px;
@@ -796,41 +813,21 @@ button {
   width: 100%;
   float: left;
   font-size: 18px;
-  background-color: #28454e;
+  background-color: #031a4f;
   color: #ffffff;
   text-align: center;
   padding: 8px;
 }
 
 .started_bt a:hover {
-  color: #ffffff;
-  background-color: #df3a14;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.buy_bt {
-  width: 175px;
-  float: left;
-}
-
-.buy_bt a {
-  width: 100%;
-  float: left;
-  font-size: 18px;
-  background-color: #28454e;
-  color: #ffffff;
-  text-align: center;
-  padding: 8px;
-  margin-left: 10px;
-}
-
-.buy_bt a:hover {
-  color: #ffffff;
-  background-color: #df3a14;
-}
-
-.buy_bt.active a {
-  color: #ffffff;
-  background-color: #df3a14;
+.imgabout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about_img {
@@ -838,8 +835,36 @@ button {
   float: left;
 }
 
+.about_img img {
+  width: 350px; /* Ajuste esse valor conforme quiser o tamanho */
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about_text {
+  width: 80%;
+  float: left;
+  font-size: 15px;
+  color: #232323;
+  margin-left: 0px;
+  padding-top: 20px;
+}
+
 .padding_left0 {
   padding-left: 0px;
+}
+
+.espacobox {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* permite quebrar para outra linha se a tela for pequena */
+  justify-content: space-between; /* ajusta o espaçamento entre os itens */
+}
+
+.espacobox > div {
+  flex: 1 1 calc(50% - 20px); /* dois por linha com gap de 20px */
+  min-width: 250px; /* opcional, ajuda na responsividade */
 }
 
 /* about section end */
