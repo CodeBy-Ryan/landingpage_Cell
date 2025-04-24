@@ -228,7 +228,7 @@ button {
   position: absolute;
   width: 730px;
   height: 900px;
-  background-color: #1f8ad127;
+  background-color: #0d3b6675;
   left: -40px;
   top: -70px;
   z-index: -1;
@@ -344,7 +344,7 @@ button {
   float: left;
   padding: 8px 10px;
   color: #ffffff;
-  background-color: #031846;
+  background-color: #0d3b66;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
@@ -373,7 +373,7 @@ button {
   height: 40px;
   opacity: 1;
   font-size: 40px;
-  color: #031846;
+  color: #0d3b66;
 }
 
 #banner_slider .carousel-control-next:focus,
@@ -407,7 +407,7 @@ button {
   width: 100%;
   float: left;
   font-size: 40px;
-  color: #031846;
+  color: #0d3b66;
   font-weight: 700;
 }
 
@@ -431,9 +431,9 @@ button {
   float: left;
   font-size: 18px;
   font-weight: 700;
-  color: #0f0f0f;
+  color: #ffffff;
   text-transform: uppercase;
-  background-color: #e0fdf9;
+  background-color: #0d3b66;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
@@ -549,7 +549,7 @@ button {
 }
 
 .bi {
-  color: #001431;
+  color: #0d3b66;
   font-size: 4rem;
   align-items: center;
   justify-content: center;
@@ -560,7 +560,7 @@ button {
 .service_item h4 {
   font-size: 20px;
   font-weight: 800;
-  color: #031846;
+  color: #0d3b66;
   margin-bottom: 10px;
 }
 
@@ -650,7 +650,7 @@ button {
 
 .faq-section .btn-link:hover,
 .faq-section .btn-link:focus {
-  color: #007bff;
+  color: #0d3b66;
 }
 
 /* Conteúdo */
@@ -669,7 +669,7 @@ button {
 /* Seção de Marcas */
 .marcas {
   overflow: hidden;
-  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  background: #000a20c4;
   padding: 40px 20px;
   margin-top: 10rem;
   text-align: center;
@@ -768,80 +768,53 @@ button {
 /* about_section section start */
 
 .about_section {
+  background: rgba(248, 248, 248, 0.849);
   width: 115%;
   float: left;
 }
 
-.about_taital_main {
-  width: 100%;
-  float: left;
-  padding: 180px 0px 181px 115px;
-  background-color: #1f8ad127;
-  height: auto;
-  background-size: 100%;
-}
-
-.about_taital {
-  width: 100%;
-  float: left;
-  font-size: 40px;
-  color: #262626;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.about_text {
-  width: 100%;
-  float: left;
-  font-size: 40px;
-  color: #4c4c4b;
-  margin: 0px;
-  padding-top: 20px;
-  font-weight: bold;
-}
-
-.btn_main {
-  width: 100%;
-  float: left;
-  padding-top: 40px;
-}
-
-.started_bt {
-  width: 175px;
-  float: left;
-}
-
-.started_bt a {
-  width: 100%;
-  float: left;
-  font-size: 18px;
-  background-color: #031a4f;
-  color: #ffffff;
-  text-align: center;
-  padding: 8px;
-}
-
-.started_bt a:hover {
-  color: #000000;
+.home-about-section {
   background-color: #ffffff;
 }
 
-.imgabout {
+.home-about-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  padding-top: 7rem;
 }
 
-.about_img {
-  width: 100%;
-  float: left;
+.home-about-title {
+  border-left: 5px solid #0d3b66;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d3b66;
+  left: 20px;
+  padding-left: 16px;
 }
 
-.about_img img {
-  width: 350px; /* Ajuste esse valor conforme quiser o tamanho */
-  border-radius: 50%;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+.home-about-text {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.home-about-img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #0d3b66;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #07508f;
 }
 
 .about_text {
@@ -856,8 +829,7 @@ button {
 .padding_left0 {
   padding-left: 0px;
 }
-
-.espacobox {
+*/ .espacobox {
   display: flex;
   gap: 20px;
   flex-wrap: wrap; /* permite quebrar para outra linha se a tela for pequena */
@@ -1007,7 +979,7 @@ button {
   float: left;
   font-size: 26px;
   font-weight: bold;
-  color: #001431;
+  color: #0d3b66;
   padding-bottom: 0px;
   text-transform: uppercase;
 }
@@ -1026,7 +998,7 @@ button {
   float: left;
   font-size: 18px;
   margin: 0px;
-  color: #1f8ad127;
+  color: #0d3b6675;
 }
 
 .box_main::after {
@@ -1034,7 +1006,7 @@ button {
   position: absolute;
   width: 300px;
   height: 430px;
-  background-color: #1f8ad127;
+  background-color: #0d3b6675;
   left: -40px;
   top: -40px;
   z-index: -1;
@@ -1057,7 +1029,7 @@ button {
 #my_slider .carousel-control-prev {
   width: 55px;
   height: 55px;
-  background: #1f8ad127;
+  background: #0d3b6675;
   opacity: 1;
   font-size: 40px;
   color: #252525;
@@ -1333,7 +1305,7 @@ button {
   text-align: center;
   font-size: 18px;
   color: #ffffff;
-  background-color: #e0eefd;
+  background-color: #0d3b66;
   padding: 10px;
   text-transform: uppercase;
   margin-top: 30px;
@@ -1352,7 +1324,7 @@ button:hover {
 .send_bt.active a,
 button {
   color: #ffffff;
-  background-color: #5d7fdb;
+  background-color: #0d3b6675;
 }
 
 .map_bt {
@@ -1366,7 +1338,7 @@ button {
   text-align: center;
   font-size: 18px;
   color: #ffffff;
-  background-color: #022143;
+  background-color: #0d3b66;
   padding: 10px 30px;
   text-transform: uppercase;
   margin-top: 30px;
