@@ -383,32 +383,6 @@ button {
   color: #252525;
 }
 
-.play_icon {
-  width: 100%;
-  float: left;
-  position: relative;
-  z-index: 5;
-  text-align: center;
-  margin-top: 80px;
-}
-
-.play_icon::before {
-  content: "";
-  position: absolute;
-  top: 48px;
-  left: 100px;
-  width: 100px;
-  height: 100px;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  border-radius: 100%;
-  animation: fadeEffect 1.3s infinite ease;
-  box-shadow: 0px 0px 10px 0px;
-  right: 0px;
-  margin: 0 auto;
-  z-index: -1;
-}
-
 @keyframes fadeEffect {
   0% {
     transform: translate(-50%, -50%) scale(1);
@@ -597,28 +571,6 @@ button {
   padding: 0 10px;
 }
 
-.testimonial_box {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-left: 5px solid #031846;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  height: 100%;
-}
-
-.testimonial_box p {
-  font-style: italic;
-}
-
-.mt-51 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
 .services_taital2 {
   justify-content: center;
   margin-top: 10rem;
@@ -627,28 +579,6 @@ button {
 
 .services_taital {
   margin-top: 10rem;
-}
-
-.accordion {
-  width: 50rem;
-}
-
-.card-header {
-  background-color: #1f8ad127;
-}
-
-.card-header .btn {
-  color: #031846;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: left;
-  width: 100%;
-}
-
-.card-body {
-  background: #ffffff;
-  padding: 15px;
-  font-size: 14px;
 }
 
 .btn-success,
@@ -662,6 +592,74 @@ button {
 .btn-success:hover,
 .btn-primary:hover {
   opacity: 0.9;
+}
+
+/* Estilo da seção FAQ */
+.faq-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Título */
+.faq-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Estilo do card */
+.faq-section .card {
+  border: none;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-section .card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Botão */
+.faq-section .card-header {
+  background: transparent;
+  padding: 0;
+}
+
+.faq-section .btn-link {
+  display: block;
+  width: 100rem;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.faq-section .btn-link:hover,
+.faq-section .btn-link:focus {
+  color: #007bff;
+}
+
+/* Conteúdo */
+.faq-section .card-body {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
 }
 
 /* service.html arquivo and */
@@ -871,11 +869,93 @@ button {
   min-width: 250px; /* opcional, ajuda na responsividade */
 }
 
+/* about section PAG START */
+
+.loja-galeria {
+  background-color: transparent;
+  padding: 80px 20px;
+}
+
+.loja-galeria .section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.loja-galeria .gallery-item {
+  overflow: hidden;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loja-galeria .gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.loja-galeria .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.loja-galeria .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.destaque-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.destaque-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  border-left: 5px solid #00c292;
+  padding-left: 16px;
+}
+
+.destaque-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.destaque-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  /* filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1)); */
+  transition: transform 0.3s ease;
+}
+
+.destaque-img:hover {
+  transform: scale(1.03);
+}
+
+.quem-somos-section {
+  background-color: transparent;
+  padding: 80px 20px;
+  border-radius: 16px;
+}
+
+.quem-somos-section .logocell {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
 /* about section end */
 
 /* customer section start */
 
 .customer_section {
+  margin-bottom: 10rem;
   width: 100%;
   float: left;
 }
