@@ -1046,7 +1046,7 @@ button {
 .content {
   flex: 1;
   max-width: 500px;
-  text-align: left;
+  text-align: center;
 }
 
 .content .cell-information {
@@ -1085,7 +1085,7 @@ button {
 }
 
 .content button:hover {
-  background: #111;
+  background: #ffffff;
 }
 
 /* Setas de navegação */
@@ -1098,25 +1098,16 @@ button {
 
 .arrows button {
   background: none;
-  border: 2px solid #000;
   border-radius: 50%;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.arrows button:hover {
-  background: #000;
-}
-
 .arrows img {
   width: 20px;
   height: 20px;
   filter: invert(0); /* preto */
-}
-
-.arrows button:hover img {
-  filter: invert(1); /* branco ao hover */
 }
 
 .arrows button:first-child img {
@@ -1177,6 +1168,7 @@ button {
 .contact_section {
   width: 100%;
   float: left;
+  margin-top: -15rem;
 }
 
 .contact_taital {
