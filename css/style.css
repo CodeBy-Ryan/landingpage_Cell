@@ -230,7 +230,7 @@ button {
 
 .toggle-icon::before,
 .toggle-icon::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 3px;
@@ -259,7 +259,6 @@ button {
     display: none;
   }
 }
-
 
 /* header section start */
 
@@ -519,7 +518,8 @@ button {
   margin-bottom: -10px;
 }
 
-.services_box_left h4 {
+.services_box_left h4,
+.services_box_right h4 {
   color: #111111;
 }
 

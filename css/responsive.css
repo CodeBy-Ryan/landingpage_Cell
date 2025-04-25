@@ -238,6 +238,7 @@ body {
   }
 
   .col-md-8 {
+    padding-top: 1rem;
     width: 100%; /* Ajusta a largura da segunda coluna para 100% */
   }
 
@@ -245,7 +246,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza horizontalmente */
-    gap: 20px; /* Espaçamento entre os blocos */
+    gap: 5rem; /* Espaçamento entre os blocos */
   }
 
   .services_box_left,
@@ -261,7 +262,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 5rem;
+    margin-top: -1rem;
   }
 
   .readmore_btn {
