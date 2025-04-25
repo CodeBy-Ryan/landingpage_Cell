@@ -701,7 +701,7 @@ button {
 
 .faq-section .btn-link {
   display: block;
-  width: 100rem;
+  width: 100%; /* Agora é responsivo */
   padding: 20px;
   font-size: 18px;
   font-weight: 600;
