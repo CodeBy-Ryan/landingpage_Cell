@@ -1,665 +1,756 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <html>
-    <head>
-      <head>
-         <!-- basic -->
-         <meta charset="UTF-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>PedroFone</title>
-    
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css" />
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css" />
-      <!-- fevicon -->
-      <link rel="icon" href="./images/cellicon.png" type="image/png" />
-      <!-- font css -->
-      <link
-        href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
-        rel="stylesheet"
-      />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-      <!-- Tweaks for older IEs-->
-      <link
-        rel="stylesheet"
-        href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-      />
+<html lang="pt-pt">
+  <head>
+    <!-- basic -->
 
-       <!-- IMPORTANDO ICONS -->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    </head>
-    <body>
-      <div class="header_section">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"
-              ><img src="images/logo.png"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-              
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-             
-            </div>
-          </nav>
-        </div>
-        <!-- banner section start -->
-        <div class="banner_section layout_padding">
-          <div class="container">
-            <div class="row">
-              <div class="content-main col-md-6">
-                <h1 class="banner_taital">
-                  O seu novo telemóvel
-                 espera por você aqui.
-                </h1>
-                <p class="banner_text">
-                  Novos e recondicionados com garantia, só na Pedrofone.
-                </p>
-                <div class="started_text"><a href="#services">Saiba Mais</a></div>
-              </div>
-              <div class="col-md-6">
-                <div
-                  id="banner_slider"
-                  class="carousel slide"
-                  data-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="banner_img">
-                        <img src="./images/12-pro-azul-cell.png" />
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="banner_img">
-                        <img src="./images/12-pro-max-branco-cell.png" />
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="banner_img">
-                        <img src="images/12-gradeb.png" />
-                      </div>
-                    </div>
-                  </div> 
-                  <a
-                    class="carousel-control-prev"
-                    href="#banner_slider"
-                    role="button"
-                    data-slide="prev"
-                  >
-                    <i class="fa fa-angle-left"></i>
-                  </a>
-                  <a
-                    class="carousel-control-next"
-                    href="#banner_slider"
-                    role="button"
-                    data-slide="next"
-                  >
-                    <i class="fa fa-angle-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+   <!-- Meta tags padrão -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Descrição do seu site aqui - com até 160 caracteres." />
+<meta name="keywords" content="palavra-chave1, palavra-chave2, palavra-chave3" />
+<meta name="author" content="Seu Nome ou Empresa" />
+
+<!-- Meta Open Graph -->
+<meta property="og:title" content="Título do seu site ou página" />
+<meta property="og:description" content="Uma descrição atrativa do conteúdo da página." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.seusite.com.br/sua-pagina" />
+<meta property="og:image" content="https://www.seusite.com.br/imagem.jpg" />
+<meta property="og:locale" content="pt_BR" />
+
+<!-- Meta Twitter Card (opcional, mas recomendado) -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Título da sua página no Twitter" />
+<meta name="twitter:description" content="Descrição resumida para o Twitter" />
+<meta name="twitter:image" content="https://www.seusite.com.br/imagem.jpg" />
+
+    
+    <title>PedroFone</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="./images/cellicon.png" type="image/png" />
+    <!-- font css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+
+    <!-- IMPORTANDO ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <!-- banner section end -->
+        </nav>
       </div>
-      <!-- header section end -->
-      
-      <!-- services section start-->
-      <div class="services_section layout_padding" id="services">
-        <div class="container">
-          <div class="row services-row">
-            <div class="col-md-4">
-              <h1 class="services_taital">Nossas Características</h1>
-              <p class="services_text">
-                Na Pedrofone, cada detalhe importa. Trabalhamos com compromisso, qualidade e confiança para oferecer a melhor experiência. Seja na compra de um telemóvel novo ou recondicionado.
-              </p>
-              <div class="readmore_btn"><a href="services.html">Ler Mais</a></div>
-            </div>
-            <div class="col-md-8">
-              <div class="services_taital">
-                <div class="services_box">
-                  <div class="services_box_left">
-                    <h5 class="fashion_text">Entrega grátis</h5>
-                    <h4>24 Horas</h4>
-                    <div ><i class="bi bi-box-seam-fill" alt="Entrega"></i> </div>
-                  </div>
-                  <div class="services_box_right">
-                    <h5 class="fashion_text">Garantia</h5>
-                    <h4>24 Meses</h4>
-                    <div ><i class="bi bi-shield-check"></i></div>
-                  </div>
-                </div>
-                <div class="services_box_2">
-                  <div class="services_box_left">
-                    <h5 class="fashion_text">Assistência</h5>
-                    <h4>Técnica</h4>
-                    <div ><i class="bi bi-file-earmark-person-fill"></i></div>
-                  </div>
-                  <div class="services_box_right">
-                    <h5 class="fashion_text">Serviço</h5>
-                    <h4>Personalizado</h4>
-                    <div ><i class="bi bi-star-fill"></i></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-       <!-- services section end -->
-
-
-       <!-- about section start -->
-       <div class="marcas">
-        <h2 class="titulo-marcas">Marcas que Trabalhamos</h2>
-        <div class="logos-track">
-          <img src="./images/marca1.png" />
-          <img src="./images/marca2.png" />
-          <img src="./images/marca3.png" />
-          <img src="./images/marca4.png" />
-          <img src="./images/marca5.png" />
-          <!-- Repete as imagens para o loop -->
-          <img src="./images/marca6.png" />
-          <img src="./images/marca7.png" />
-          <img src="./images/marca8.png" />
-          <img src="./images/marca9.png" />
-          <img src="./images/marca10.png" />
-        </div>
-      </div>
-    
-      
-      <section class="home-about-section py-5">
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <!-- Texto à esquerda -->
-            <div class="col-lg-6">
-              <div class="home-about-content">
-                <h2 class="home-about-title mb-4">Quem nós somos?</h2>
-                <p class="home-about-text">
-                  A PedroFone Unipessoal, Lda é uma empresa que conta já com mais de 10 anos de experiência no mercado das telecomunicações.
-                  <br /><br />
-                  Entre os nossos serviços encontram-se, serviços de Assistência Técnica em todo o tipo de dispositivos móveis, iPhones, iPads, Macbooks, smartphones e consolas.
-                  Na nossa loja poderás encontrar uma variedade de telemóveis novos e recondicionados a preços imbatíveis!
-                  <br /><br />
-                  Ao comprares através da PedroFone terás ao teu dispor uma equipa de profissionais especializados, garantia de 24 meses em todos os modelos e entregas rápidas, em 24 horas.
-                  <br /><br />
-                  Para além disso, ao adquirires um telemóvel recondicionado estarás a estimular a economia circular, dando uma 2ª vida a estes aparelhos e uma nova oportunidade para o planeta se regenerar!
-                </p>
-                <a href="about.html" class="btn btn-primary mt-3">Saiba Mais</a>
-              </div>
-            </div>
-            <!-- Imagem à direita -->
-            <div class="col-lg-6 text-center1">
-              <img src="images/IMG CELL.jpg" alt="Loja PedroFone" class="img-fluid rounded-4 shadow home-about-img" />
-            </div>
-          </div>
-        </div>
-      </section>
-      
-    
-       <!-- about section end -->
-
-       <!-- section CELL 3D start -->
-<section class="radial2">
-  <div class="list">
-    
-    <div class="item">
-      <div class="phone-img">
-        <img src="./images/IPHONEX-RECONDICIONADO.png" alt="Img-cell" />
-      </div>
-      <div class="content">
-        <p class="cell-information">Grade A</p>
-        <h2>IPhone X Recondicionado</h2>
-        <p class="description">
-          Compra já o teu iPhone X Recondicionado ao preço mais baixo do mercado com o PedroFone!
-          <br><br>
-          Ao comprares um iPhone recondicionado através do PedroFone terás ao teu dispor eficácia de 100% e uma qualidade de serviço excecional.
-          <br><br>
-          Para além disso, ao adquirires um telemóvel recondicionado estarás a estimular a economia circular, dando uma 2ª vida a estes aparelhos e uma nova oportunidade para o planeta se regenerar!
-        </p>
-        <button>280,00 € – 299,00 €</button>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="phone-img">
-        <img src="./images/IPHONE11-RECONDICIONADO.png" alt="Img-cell" />
-      </div>
-      <div class="content">
-        <p class="cell-information">Grade B</p>
-        <h2>IPhone 11 Recondicionado</h2>
-        <p class="description">
-          Compra já o teu iPhone 11 Recondicionado ao preço mais baixo do mercado com o PedroFone!
-          <br><br>
-          Ao comprares um iPhone recondicionado através do PedroFone terás ao teu dispor eficácia de 100% e uma qualidade de serviço excecional.
-          <br><br>
-          Para além disso, ao adquirires um telemóvel recondicionado estarás a estimular a economia circular, dando uma 2ª vida a estes aparelhos e uma nova oportunidade para o planeta se regenerar!
-        </p>
-        <button>360,00 €</button>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="phone-img">
-        <img src="./images/IPHONE11-pro-RECONDICIONADO.png" alt="Img-cell" />
-      </div>
-      <div class="content">
-        <p class="cell-information">Grade B</p>
-        <h2>iPhone 11 Pro</h2>
-        <p class="description">
-          Compra já o teu iPhone 11 Pro Recondicionado ao preço mais baixo do mercado com o PedroFone!
-          <br><br>
-          Ao comprares um iPhone recondicionado através do PedroFone terás ao teu dispor eficácia de 100% e uma qualidade de serviço excecional.
-          <br><br>
-          Para além disso, ao adquirires um telemóvel recondicionado estarás a estimular a economia circular, dando uma 2ª vida a estes aparelhos e uma nova oportunidade para o planeta se regenerar!
-        </p>
-        <button>520,00 € – 540,00 €</button>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="phone-img">
-        <img src="./images/IPHONE12-pro MAX-RECONDICIONADO.png" alt="Img-cell" />
-      </div>
-      <div class="content">
-        <p class="cell-information">Grade A</p>
-        <h2>iPhone 12 Pro Max Recondicionado</h2>
-        <p class="description">
-          Compra já o teu iPhone 12 Pro Max Recondicionado ao preço mais baixo do mercado com o PedroFone!
-          <br><br>
-          Ao comprares um iPhone recondicionado através do PedroFone terás ao teu dispor eficácia de 100% e uma qualidade de serviço excecional.
-          <br><br>
-          Para além disso, ao adquirires um telemóvel recondicionado estarás a estimular a economia circular, dando uma 2ª vida a estes aparelhos e uma nova oportunidade para o planeta se regenerar!
-        </p>
-        <button>720,00 € – 860,00 €</button>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="phone-img">
-        <img src="./images/IPHONE13-pro-RECONDICIONADO.png" alt="Img-cell" />
-      </div>
-      <div class="content">
-        <p class="cell-information">Grade A</p>
-        <h2>IPhone 13 Pro Recondicionado</h2>
-        <p class="description">
-          Compra já o teu iPhone 13 Pro Recondicionado ao preço mais baixo do mercado com o PedroFone!
-          <br><br>
-          Ao comprares um iPhone recondicionado através do PedroFone terás ao teu dispor eficácia de 100% e uma qualidade de serviço excecional.
-          <br><br>
-          Para além disso, ao adquirires um telemóvel recondicionado estarás a estimular a economia circular, dando uma 2ª vida a estes aparelhos e uma nova oportunidade para o planeta se regenerar!
-        </p>
-        <button>850,00 € – 940,00 €</button>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="phone-img">
-        <img src="./images/IPHONE13-pro MAX-RECONDICIONADO.png" alt="Img-cell" />
-      </div>
-      <div class="content">
-        <p class="cell-information">Grade A</p>
-        <h2>IPhone 13 Pro Max Recondicionado</h2>
-        <p class="description">
-          Compra já o teu iPhone 13 Pro Max Recondicionado ao preço mais baixo do mercado com o PedroFone!
-          <br><br>
-          Ao comprares um iPhone recondicionado através do PedroFone terás ao teu dispor eficácia de 100% e uma qualidade de serviço excecional.
-          <br><br>
-          Para além disso, ao adquirires um telemóvel recondicionado estarás a estimular a economia circular, dando uma 2ª vida a estes aparelhos e uma nova oportunidade para o planeta se regenerar!
-        </p>
-        <button>940,00 € – 1090,00 €</button>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="arrows">
-    <button><img src="./images/arrow.png" alt="seta-esquerda" /></button>
-    <button><img src="./images/arrow.png" alt="seta-direita" /></button>
-  </div>
-
-  <div class="indicators">
-    <div class="number">01</div>
-    <ul>
-      <li class="active"></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-</section>
-
-
-       <!--  section CELL 3D end -->
-
-    
-      <!-- Contato -->
-
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
-        <section class="mt-5 text-center">
-           <h2 class="services_taital">Fale Conosco Agora</h2>
-           <a
-             href="https://wa.me/910 086 001"
-             class="btn btn-success m-2"
-             target="_blank"
-           >
-             <i class="fa fa-whatsapp"></i> WhatsApp
-           </a>
-          </section>
-       <div class="container">
-         <div class="row">
-         <div class="contact_section_2">
-           <div class="row">
-             <div class="col-md-12">
-               <div class="mail_section map_form_container">
-                 <form action="https://formsubmit.co/geral@pedrofone.pt" method="POST">
-                   <input type="text" class="mail_text" placeholder="Seu Nome" name="name" required />
-                   <input type="email" class="mail_text" placeholder="Seu Email" name="email" required />
-                   <textarea class="massage-bt" placeholder="Mensagem" rows="5" name="message" required></textarea>
-                 
-                   <!-- Configurações extras -->
-                   <input type="hidden" name="_next" value="about:blank">
-
-                   
-                   <input type="hidden" name="_captcha" value="false">
-                   <!-- Botões -->
-                   <div class="contact_btn_main">
-                     <button  class="send_bt active" type="submit" >Enviar</button>
-                     <div class="map_bt"><a href="#" id="showMap">Mapa</a></div>
-                   </div>
-
-                   
-                 </form>
-                 
-                 <script>
-                   document.querySelector("form").addEventListener("submit", function () {
-                     setTimeout(function () {
-                       window.location.href = "index.html#sucesso";
-                     }, 1000); // espera 1 segundo antes de redirecionar
-                   });
-                 </script>
-                 
-                 <div class="map_main map_container">
-                   <div class="map-responsive">
-                     <iframe
-                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6073.210240015243!2d-8.418119885159342!3d41.21235346396309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24895fe1ae29df%3A0x710cb7b68cea2016!2sPedrofone!5e1!3m2!1spt-BR!2sus!4v1745362690412!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                       width="600"
-                       height="368"
-                       frameborder="0"
-                       style="border: 0; width: 100%"
-                       allowfullscreen=""
-                     ></iframe>
-                     <div class="btn_main">
-                       <div
-                         class="map_bt d-flex justify-content-center w-100 map_center"
-                       >
-                         <a href="#" id="showForm">Form</a>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-      <!-- contact section end -->
-   </div>
-
-   <!-- services section end -->
-
- 
-   <!-- copyright section end -->
-   <!-- Javascript files-->
-   <script src="./js/carousel.js" defer></script>
-
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
-   <script src="js/plugin.js"></script>
-   <!-- sidebar -->
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
-   <!-- javascript -->
-   <script>
-     // Material Select Initialization
-     $(document).ready(function () {
-       $(".mdb-select").materialSelect();
-       $(".select-wrapper.md-form.md-outline input.select-dropdown").bind(
-         "focus blur",
-         function () {
-           $(this)
-             .closest(".select-outline")
-             .find("label")
-             .toggleClass("active");
-           $(this)
-             .closest(".select-outline")
-             .find(".caret")
-             .toggleClass("active");
-         }
-       );
-     });
-   </script>
-       <!--contact section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <div class="footer_logo">
-                <img src="images/logo.png" />
+            <div class="content-main col-md-6">
+              <h1 class="banner_taital">
+                O seu novo telemóvel espera por você aqui.
+              </h1>
+              <p class="banner_text">
+                Novos e recondicionados com garantia, só na Pedrofone.
+              </p>
+              <div class="started_text"><a href="#services">Saiba Mais</a></div>
+            </div>
+            <div class="col-md-6">
+              <div
+                id="banner_slider"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="banner_img">
+                      <img src="./images/12-pro-azul-cell.png" />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="banner_img">
+                      <img src="./images/12-pro-max-branco-cell.png" />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="banner_img">
+                      <img src="images/12-gradeb.png" />
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#banner_slider"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="fa fa-angle-left"></i>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#banner_slider"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="fa fa-angle-right"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="footer_section_2">
+        </div>
+      </div>
+      <!-- banner section end -->
+    </div>
+    <!-- header section end -->
+
+    <!-- services section start-->
+    <div class="services_section layout_padding" id="services">
+      <div class="container">
+        <div class="row services-row">
+          <div class="col-md-4">
+            <h1 class="services_taital">Nossas Características</h1>
+            <p class="services_text">
+              Na Pedrofone, cada detalhe importa. Trabalhamos com compromisso,
+              qualidade e confiança para oferecer a melhor experiência. Seja na
+              compra de um telemóvel novo ou recondicionado.
+            </p>
+            <div class="readmore_btn"><a href="services.html">Ler Mais</a></div>
+          </div>
+          <div class="col-md-8">
+            <div class="services_taital">
+              <div class="services_box">
+                <div class="services_box_left">
+                  <h5 class="fashion_text">Entrega grátis</h5>
+                  <h4>24 Horas</h4>
+                  <div><i class="bi bi-box-seam-fill" alt="Entrega"></i></div>
+                </div>
+                <div class="services_box_right">
+                  <h5 class="fashion_text">Garantia</h5>
+                  <h4>24 Meses</h4>
+                  <div><i class="bi bi-shield-check"></i></div>
+                </div>
+              </div>
+              <div class="services_box_2">
+                <div class="services_box_left">
+                  <h5 class="fashion_text">Assistência</h5>
+                  <h4>Técnica</h4>
+                  <div><i class="bi bi-file-earmark-person-fill"></i></div>
+                </div>
+                <div class="services_box_right">
+                  <h5 class="fashion_text">Serviço</h5>
+                  <h4>Personalizado</h4>
+                  <div><i class="bi bi-star-fill"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services section end -->
+
+    <!-- about section start -->
+    <div class="marcas">
+      <h2 class="titulo-marcas">Marcas que Trabalhamos</h2>
+      <div class="logos-track">
+        <img src="./images/marca1.png" />
+        <img src="./images/marca2.png" />
+        <img src="./images/marca3.png" />
+        <img src="./images/marca4.png" />
+        <img src="./images/marca5.png" />
+        <!-- Repete as imagens para o loop -->
+        <img src="./images/marca6.png" />
+        <img src="./images/marca7.png" />
+        <img src="./images/marca8.png" />
+        <img src="./images/marca9.png" />
+        <img src="./images/marca10.png" />
+      </div>
+    </div>
+
+    <section class="home-about-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Texto à esquerda -->
+          <div class="col-lg-6">
+            <div class="home-about-content">
+              <h2 class="home-about-title mb-4">Quem nós somos?</h2>
+              <p class="home-about-text">
+                A PedroFone Unipessoal, Lda é uma empresa que conta já com mais
+                de 10 anos de experiência no mercado das telecomunicações.
+                <br /><br />
+                Entre os nossos serviços encontram-se, serviços de Assistência
+                Técnica em todo o tipo de dispositivos móveis, iPhones, iPads,
+                Macbooks, smartphones e consolas. Na nossa loja poderás
+                encontrar uma variedade de telemóveis novos e recondicionados a
+                preços imbatíveis!
+                <br /><br />
+                Ao comprares através da PedroFone terás ao teu dispor uma equipa
+                de profissionais especializados, garantia de 24 meses em todos
+                os modelos e entregas rápidas, em 24 horas.
+                <br /><br />
+                Para além disso, ao adquirires um telemóvel recondicionado
+                estarás a estimular a economia circular, dando uma 2ª vida a
+                estes aparelhos e uma nova oportunidade para o planeta se
+                regenerar!
+              </p>
+              <a href="about.html" class="btn btn-primary mt-3">Saiba Mais</a>
+            </div>
+          </div>
+          <!-- Imagem à direita -->
+          <div class="col-lg-6 text-center1">
+            <img
+              src="images/IMG CELL.jpg"
+              alt="Loja PedroFone"
+              class="img-fluid rounded-4 shadow home-about-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section end -->
+
+    <!-- section CELL 3D start -->
+    <section class="radial2">
+      <div class="list">
+        <div class="item">
+          <div class="phone-img">
+            <img src="./images/IPHONEX-RECONDICIONADO.png" alt="Img-cell" />
+          </div>
+          <div class="content">
+            <p class="cell-information">Grade A</p>
+            <h2>IPhone X Recondicionado</h2>
+            <p class="description">
+              Compra já o teu iPhone X Recondicionado ao preço mais baixo do
+              mercado com o PedroFone!
+              <br /><br />
+              Ao comprares um iPhone recondicionado através do PedroFone terás
+              ao teu dispor eficácia de 100% e uma qualidade de serviço
+              excecional.
+              <br /><br />
+              Para além disso, ao adquirires um telemóvel recondicionado estarás
+              a estimular a economia circular, dando uma 2ª vida a estes
+              aparelhos e uma nova oportunidade para o planeta se regenerar!
+            </p>
+            <button>280,00 € – 299,00 €</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="phone-img">
+            <img src="./images/IPHONE11-RECONDICIONADO.png" alt="Img-cell" />
+          </div>
+          <div class="content">
+            <p class="cell-information">Grade B</p>
+            <h2>IPhone 11 Recondicionado</h2>
+            <p class="description">
+              Compra já o teu iPhone 11 Recondicionado ao preço mais baixo do
+              mercado com o PedroFone!
+              <br /><br />
+              Ao comprares um iPhone recondicionado através do PedroFone terás
+              ao teu dispor eficácia de 100% e uma qualidade de serviço
+              excecional.
+              <br /><br />
+              Para além disso, ao adquirires um telemóvel recondicionado estarás
+              a estimular a economia circular, dando uma 2ª vida a estes
+              aparelhos e uma nova oportunidade para o planeta se regenerar!
+            </p>
+            <button>360,00 €</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="phone-img">
+            <img
+              src="./images/IPHONE11-pro-RECONDICIONADO.png"
+              alt="Img-cell"
+            />
+          </div>
+          <div class="content">
+            <p class="cell-information">Grade B</p>
+            <h2>iPhone 11 Pro</h2>
+            <p class="description">
+              Compra já o teu iPhone 11 Pro Recondicionado ao preço mais baixo
+              do mercado com o PedroFone!
+              <br /><br />
+              Ao comprares um iPhone recondicionado através do PedroFone terás
+              ao teu dispor eficácia de 100% e uma qualidade de serviço
+              excecional.
+              <br /><br />
+              Para além disso, ao adquirires um telemóvel recondicionado estarás
+              a estimular a economia circular, dando uma 2ª vida a estes
+              aparelhos e uma nova oportunidade para o planeta se regenerar!
+            </p>
+            <button>520,00 € – 540,00 €</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="phone-img">
+            <img
+              src="./images/IPHONE12-pro MAX-RECONDICIONADO.png"
+              alt="Img-cell"
+            />
+          </div>
+          <div class="content">
+            <p class="cell-information">Grade A</p>
+            <h2>iPhone 12 Pro Max Recondicionado</h2>
+            <p class="description">
+              Compra já o teu iPhone 12 Pro Max Recondicionado ao preço mais
+              baixo do mercado com o PedroFone!
+              <br /><br />
+              Ao comprares um iPhone recondicionado através do PedroFone terás
+              ao teu dispor eficácia de 100% e uma qualidade de serviço
+              excecional.
+              <br /><br />
+              Para além disso, ao adquirires um telemóvel recondicionado estarás
+              a estimular a economia circular, dando uma 2ª vida a estes
+              aparelhos e uma nova oportunidade para o planeta se regenerar!
+            </p>
+            <button>720,00 € – 860,00 €</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="phone-img">
+            <img
+              src="./images/IPHONE13-pro-RECONDICIONADO.png"
+              alt="Img-cell"
+            />
+          </div>
+          <div class="content">
+            <p class="cell-information">Grade A</p>
+            <h2>IPhone 13 Pro Recondicionado</h2>
+            <p class="description">
+              Compra já o teu iPhone 13 Pro Recondicionado ao preço mais baixo
+              do mercado com o PedroFone!
+              <br /><br />
+              Ao comprares um iPhone recondicionado através do PedroFone terás
+              ao teu dispor eficácia de 100% e uma qualidade de serviço
+              excecional.
+              <br /><br />
+              Para além disso, ao adquirires um telemóvel recondicionado estarás
+              a estimular a economia circular, dando uma 2ª vida a estes
+              aparelhos e uma nova oportunidade para o planeta se regenerar!
+            </p>
+            <button>850,00 € – 940,00 €</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="phone-img">
+            <img
+              src="./images/IPHONE13-pro MAX-RECONDICIONADO.png"
+              alt="Img-cell"
+            />
+          </div>
+          <div class="content">
+            <p class="cell-information">Grade A</p>
+            <h2>IPhone 13 Pro Max Recondicionado</h2>
+            <p class="description">
+              Compra já o teu iPhone 13 Pro Max Recondicionado ao preço mais
+              baixo do mercado com o PedroFone!
+              <br /><br />
+              Ao comprares um iPhone recondicionado através do PedroFone terás
+              ao teu dispor eficácia de 100% e uma qualidade de serviço
+              excecional.
+              <br /><br />
+              Para além disso, ao adquirires um telemóvel recondicionado estarás
+              a estimular a economia circular, dando uma 2ª vida a estes
+              aparelhos e uma nova oportunidade para o planeta se regenerar!
+            </p>
+            <button>940,00 € – 1090,00 €</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrows">
+        <button><img src="./images/arrow.png" alt="seta-esquerda" /></button>
+        <button><img src="./images/arrow.png" alt="seta-direita" /></button>
+      </div>
+
+      <div class="indicators">
+        <div class="number">01</div>
+        <ul>
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+    <!--  section CELL 3D end -->
+
+    <!-- Contato -->
+
+    <!-- contact section start -->
+    <div class="contact_section layout_padding">
+      <section class="mt-5 text-center">
+        <h2 class="services_taital">Fale Conosco Agora</h2>
+        <a
+          href="https://wa.me/351910086001"
+          class="btn btn-success m-2"
+          target="_blank"
+        >
+          <i class="fa fa-whatsapp"></i> WhatsApp
+        </a>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="contact_section_2">
             <div class="row">
-              <div class="col-lg-3 col-sm-6">
-                <h2 class="useful_text">Menu</h2>
-                <div class="footer_menu">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contatos</a></li>
-                  </ul>
-                </div>
-              </div>
-              
-           
-              <div class="col-lg-3 col-sm-6">
-                <h2 class="useful_text">Entre em Contato</h2>
-                <div class="location_text">
-                  <img src="images/call-icon.png" /><span
-                    class="padding_left_15"
-                    ><a href="#">910 086 001</a></span
+              <div class="col-md-12">
+                <div class="mail_section map_form_container">
+                  <form
+                    action="https://formsubmit.co/geral@pedrofone.pt"
+                    method="POST"
                   >
-                </div>
-                <div class="location_text">
-                  <img src="images/mail-icon.png" /><span
-                    class="padding_left_15"
-                    ><a href="#">geral@pedrofone.pt</a></span
-                  >
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <h2 class="useful_text">Minhas Redes Sociais</h2>
-                <p class="footer_text">
-                  Acesse os nossos perfis
-                </p>
-                <div class="social_icon">
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-instagram" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                    <input
+                      type="text"
+                      class="mail_text"
+                      placeholder="Seu Nome"
+                      name="name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      class="mail_text"
+                      placeholder="Seu Email"
+                      name="email"
+                      required
+                    />
+                    <textarea
+                      class="massage-bt"
+                      placeholder="Mensagem"
+                      rows="5"
+                      name="message"
+                      required
+                    ></textarea>
 
-              <div class="col-lg-3 col-sm-6">
-                <h2 class="useful_text"> - Atenção</h2>
-                <div class="location_text">
-                  <span
-                    class="padding_left_15"
-                    ><a href="#">
-                      Termos e condições</a></span
-                  >
-                </div>
-                <div class="location_text">
-                  <span
-                    class="padding_left_15"
-                    ><a href="#">
-                      Política de Privacidade</a></span
-                  >
-                </div>
+                    <!-- Configurações extras -->
+                    <input type="hidden" name="_next" value="about:blank" />
 
-                <div class="location_text">
-                  <span
-                    class="padding_left_15"
-                    ><a href="https://www.cniacc.pt/pt/">Centro de litígios</a></span
-                  >
-                </div>
+                    <input type="hidden" name="_captcha" value="false" />
+                    <!-- Botões -->
+                    <div class="contact_btn_main">
+                      <button class="send_bt active" type="submit">
+                        Enviar
+                      </button>
+                      <div class="map_bt">
+                        <a href="#" id="showMap">Mapa</a>
+                      </div>
+                    </div>
+                  </form>
 
-                <div class="location_text">
-                  <span
-                    class="padding_left_15"
-                    ><a href="https://www.livroreclamacoes.pt/INICIO/">
-                      Livro de reclamações</a></span
-                  >
+                  <script>
+                    document
+                      .querySelector("form")
+                      .addEventListener("submit", function () {
+                        setTimeout(function () {
+                          window.location.href = "index.html#sucesso";
+                        }, 1000); // espera 1 segundo antes de redirecionar
+                      });
+                  </script>
+
+                  <div class="map_main map_container">
+                    <div class="map-responsive">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6073.210240015243!2d-8.418119885159342!3d41.21235346396309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24895fe1ae29df%3A0x710cb7b68cea2016!2sPedrofone!5e1!3m2!1spt-BR!2sus!4v1745362690412!5m2!1spt-BR!2sus"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        width="600"
+                        height="368"
+                        frameborder="0"
+                        style="border: 0; width: 100%"
+                        allowfullscreen=""
+                      ></iframe>
+                      <div class="btn_main">
+                        <div
+                          class="map_bt d-flex justify-content-center w-100 map_center"
+                        >
+                          <a href="#" id="showForm">Form</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="cofinanciado1">
-          <img src="./images/imagem-compete-1024x127.png" alt="Reconhecidos por" />
+      </div>
+      <!-- contact section end -->
+    </div>
+
+    <!-- services section end -->
+
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="./js/carousel.js" defer></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script>
+      // Material Select Initialization
+      $(document).ready(function () {
+        $(".mdb-select").materialSelect();
+        $(".select-wrapper.md-form.md-outline input.select-dropdown").bind(
+          "focus blur",
+          function () {
+            $(this)
+              .closest(".select-outline")
+              .find("label")
+              .toggleClass("active");
+            $(this)
+              .closest(".select-outline")
+              .find(".caret")
+              .toggleClass("active");
+          }
+        );
+      });
+    </script>
+    <!--contact section end -->
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer_logo">
+              <img src="images/logo.png" />
+            </div>
+          </div>
+        </div>
+        <div class="footer_section_2">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <h2 class="useful_text">Menu</h2>
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contatos</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <h2 class="useful_text">Entre em Contato</h2>
+              <div class="location_text">
+                <img src="images/call-icon.png" /><span class="padding_left_15"
+                  ><a href="#">910 086 001</a></span
+                >
+              </div>
+              <div class="location_text">
+                <img src="images/mail-icon.png" /><span class="padding_left_15"
+                  ><a href="#">geral@pedrofone.pt</a></span
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h2 class="useful_text">Minhas Redes Sociais</h2>
+              <p class="footer_text">Acesse os nossos perfis</p>
+              <div class="social_icon">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <h2 class="useful_text">- Atenção</h2>
+              <div class="location_text">
+                <span class="padding_left_15"
+                  ><a href="#"> Termos e condições</a></span
+                >
+              </div>
+              <div class="location_text">
+                <span class="padding_left_15"
+                  ><a href="#"> Política de Privacidade</a></span
+                >
+              </div>
+
+              <div class="location_text">
+                <span class="padding_left_15"
+                  ><a href="https://www.cniacc.pt/pt/"
+                    >Centro de litígios</a
+                  ></span
+                >
+              </div>
+
+              <div class="location_text">
+                <span class="padding_left_15"
+                  ><a href="https://www.livroreclamacoes.pt/INICIO/">
+                    Livro de reclamações</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-
-      
-      <!-- footer section end -->
-       <!-- Mensagem de sucesso -->
-       <div id="mensagemEnviada">
-        ✅ Sua mensagem foi enviada com sucesso! Obrigado pelo contato.
+      <div class="cofinanciado1">
+        <img
+          src="./images/imagem-compete-1024x127.png"
+          alt="Reconhecidos por"
+        />
       </div>
-      <style>
-        #mensagemEnviada {
-          display: none;
-          position: fixed;
-          top: 30px;
-          left: 50%;
-          transform: translateX(-50%);
-          background-color: #d4edda;
-          color: #155724;
-          border: 1px solid #c3e6cb;
-          padding: 16px 24px;
-          border-radius: 8px;
-          font-weight: 500;
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-          z-index: 9999;
-          cursor: pointer;
-          transition: opacity 0.3s ease;
-        }
-      
-        #mensagemEnviada.mostrar {
-          display: block;
-        }
-      </style>
+    </div>
 
-<script>
-  const msg = document.getElementById("mensagemEnviada");
-
-  // Mostra a mensagem se tiver #sucesso na URL
-  if (window.location.hash === "#sucesso") {
-    msg.classList.add("mostrar");
-
-    // Fecha ao clicar na mensagem
-    msg.addEventListener("click", () => {
-      msg.style.display = "none";
-    });
-
-    // Ou fecha ao clicar em qualquer lugar do site
-    document.addEventListener("click", (e) => {
-      if (e.target !== msg) {
-        msg.style.display = "none";
+    <!-- footer section end -->
+    <!-- Mensagem de sucesso -->
+    <div id="mensagemEnviada">
+      ✅ Sua mensagem foi enviada com sucesso! Obrigado pelo contato.
+    </div>
+    <style>
+      #mensagemEnviada {
+        display: none;
+        position: fixed;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        padding: 16px 24px;
+        border-radius: 8px;
+        font-weight: 500;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        z-index: 9999;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
       }
-    });
-  }
-</script>
 
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <!-- javascript -->
-      <script>
-        // Material Select Initialization
-        $(document).ready(function () {
-          $(".mdb-select").materialSelect();
-          $(".select-wrapper.md-form.md-outline input.select-dropdown").bind(
-            "focus blur",
-            function () {
-              $(this)
-                .closest(".select-outline")
-                .find("label")
-                .toggleClass("active");
-              $(this)
-                .closest(".select-outline")
-                .find(".caret")
-                .toggleClass("active");
-            }
-          );
+      #mensagemEnviada.mostrar {
+        display: block;
+      }
+    </style>
+
+    <script>
+      const msg = document.getElementById("mensagemEnviada");
+
+      // Mostra a mensagem se tiver #sucesso na URL
+      if (window.location.hash === "#sucesso") {
+        msg.classList.add("mostrar");
+
+        // Fecha ao clicar na mensagem
+        msg.addEventListener("click", () => {
+          msg.style.display = "none";
         });
-      </script>
-    </body>
-  </html>
+
+        // Ou fecha ao clicar em qualquer lugar do site
+        document.addEventListener("click", (e) => {
+          if (e.target !== msg) {
+            msg.style.display = "none";
+          }
+        });
+      }
+    </script>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script>
+      // Material Select Initialization
+      $(document).ready(function () {
+        $(".mdb-select").materialSelect();
+        $(".select-wrapper.md-form.md-outline input.select-dropdown").bind(
+          "focus blur",
+          function () {
+            $(this)
+              .closest(".select-outline")
+              .find("label")
+              .toggleClass("active");
+            $(this)
+              .closest(".select-outline")
+              .find(".caret")
+              .toggleClass("active");
+          }
+        );
+      });
+    </script>
+  </body>
 </html>
