@@ -1,637 +1,928 @@
-/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+/* ==================== RESPONSIVIDADE E AJUSTES GERAIS ==================== */
 
-/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+body {
+  padding: 0 20px; /* pequeno padding lateral para evitar conteúdo colado na borda */
+}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header-search {
-    padding: 15px 0px;
+/* Centralizações e espaçamentos */
+.full,
+.layout_padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ajustes tipográficos para telas menores */
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4,
+  h5,
+  h6 {
+    font-size: 14px;
+  }
+
+  .btn-custom {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .lead,
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 15px;
+  }
+
+  blockquote {
+    padding: 20px;
   }
 }
 
-/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+/* Responsividade ainda menor (celulares) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
 
-@media only screen and (min-width: 599px) and (max-width: 767px) {
-  .logo {
+  .btn-custom {
+    width: 100%;
     text-align: center;
   }
-  .cart-content-right {
-    padding-bottom: 5px;
-  }
-  .mg {
-    margin: 0px 0px;
-  }
-  .menu-area-main {
-    height: 256px;
-    overflow-y: auto;
-  }
-  .megamenu > .row [class*="col-"] {
-    padding: 0px;
-  }
-  .menu-area-main .megamenu .men-cat {
-    padding: 0px 15px;
-  }
-  .menu-area-main .megamenu .women-cat {
-    padding: 0px 15px;
-  }
-  .menu-area-main .megamenu .el-cat {
-    padding: 0px 15px;
-  }
-  .mean-container .mean-nav ul li a.mean-expand {
-    height: 19px;
-  }
-  .category-box.women-box {
-    display: none;
-  }
-  .cart-box {
-    display: inline-block;
-    margin: 0px 30px;
-  }
-  .wish-box {
-    float: none;
-    margin: 0px 30px;
-    display: inline-block;
-  }
-  .menu-add {
-    display: none;
-  }
-  .category-box {
-    display: none;
-  }
-  .mean-container .mean-nav ul li ol {
-    padding: 0px;
-  }
-  .mean-container .mean-nav ul li a {
-    padding: 10px 20px;
-    width: 94.8%;
-  }
-  .mean-container .mean-nav ul li li a {
-    width: 92%;
-    padding: 1em 4%;
-  }
-  .mean-container .mean-nav ul li li li a {
-    width: 100%;
-  }
-  .header-search {
-    padding: 15px 0px;
-  }
-  #collapseFilter.d-md-block {
-    padding: 30px 0px;
+
+  .layout_padding {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    gap: 16px;
   }
 }
 
-/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+/* ==================== RESPONSIVIDADE: HEADER ==================== */
 
-@media only screen and (min-width: 280px) and (max-width: 599px) {
-  .cart-content-right {
-    padding-bottom: 5px;
-  }
-  .megamenu > .row [class*="col-"] {
-    padding: 0px;
-  }
-  .menu-area-main .megamenu .men-cat {
-    padding: 0px 15px;
-  }
-  .menu-area-main .megamenu .women-cat {
-    padding: 0px 15px;
-  }
-  .menu-area-main .megamenu .el-cat {
-    padding: 0px 15px;
-  }
-  .mean-container .mean-nav ul li a {
-    padding: 1em 4%;
-    width: 92%;
-  }
-  .mean-container .mean-nav ul li li a {
-    width: 90%;
-    padding: 1em 5%;
-  }
-  .mean-container .sub-full.megamenu-categories ol li a {
-    padding: 5px 0px;
-    text-transform: capitalize;
-    width: 100%;
-  }
-  .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
-    width: auto;
-    border: none;
-    float: none;
-  }
-  .menu-area-main {
-    height: 45px;
-    overflow-y: auto;
-  }
-  .mean-container .mean-nav ul li a.mean-expand {
-    top: 0;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  #main_slider a.carousel-control-prev {
-    top: 55%;
-  }
-  #main_slider a.carousel-control-next {
-    top: 55%;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 3px 7px;
-    font-size: 15px;
-  }
-  .login_bt li a {
-    font-size: 15px;
-  }
-  .login_bt {
-    width: 230px;
-  }
+@media screen and (max-width: 992px) {
   .navbar-brand {
-    width: 10%;
-  }
-  .header_section::after {
-    width: 460px;
-    height: 790px;
-    left: -40px;
-    top: -70px;
-  }
-  .header_section::after {
-    width: 530px;
-    height: 790px;
-    left: -40px;
-    top: -70px;
-  }
-  .services_box_2 {
-    padding-left: 150px;
-    top: 0;
-  }
-  .banner_taital {
-    width: 80%;
-    font-size: 44px;
-  }
-  .banner_text {
-    width: 90%;
-    font-size: 15px;
-  }
-  .select_box_section {
-    margin-bottom: 0px;
-  }
-  .services_taital {
-    font-size: 28px;
-  }
-  .services_box_left {
-    top: 0;
-  }
-  .services_box_2 {
-    padding-left: 150px;
-    top: 0;
-  }
-  .blog_taital {
-    font-size: 40px;
-  }
-  .blog_img {
-    margin-top: 20px;
-  }
-  .number_text {
-    top: 0px;
-  }
-  .about_taital_main {
-    padding: 100px 0px 100px 15px;
-  }
-  .about_text {
-    width: 70%;
-  }
-  .started_bt {
-    width: 170px;
-    float: left;
-  }
-  .buy_bt {
-    width: 170px;
-    float: left;
-  }
-  .taital_main {
-    width: 90%;
-  }
-  .using_text {
-    width: 55%;
-  }
-  .customer_section_2 {
-    width: 90%;
-  }
-  .box_main::after {
-    height: 450px;
-  }
-  #my_slider a.carousel-control-next {
-    right: 53px;
-    top: 430px;
-  }
-  #my_slider a.carousel-control-prev {
-    top: 430px;
-    right: 120px;
-  }
-  .customer_right {
-    margin-top: 25px;
-  }
-  .contact_section_2 {
-    width: 80%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #main_slider a.carousel-control-prev {
-    top: 55%;
-  }
-  #main_slider a.carousel-control-next {
-    top: 55%;
-  }
-  .navbar-toggler {
-    background-color: #fff;
-    border: 1px solid #fff;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    text-align: center;
-  }
-  .header_section::after {
-    width: 460px;
-    height: 790px;
-    left: -40px;
-    top: -70px;
-  }
-  .banner_taital {
-    width: 100%;
-    font-size: 44px;
-  }
-  .banner_text {
-    width: 90%;
-    font-size: 15px;
-  }
-  .select_box_section {
-    margin-bottom: 0px;
-  }
-  .services_taital {
-    font-size: 28px;
-  }
-  .services_box_left {
-    top: 0;
-  }
-  .services_box_2 {
-    padding-left: 0;
-    top: 0;
-  }
-  .blog_taital {
-    font-size: 40px;
-  }
-  .blog_img {
-    margin-top: 20px;
-  }
-  .number_text {
-    top: 0px;
-  }
-  .about_taital_main {
-    padding: 45px 0px 45px 15px;
-  }
-  .about_text {
-    width: 90%;
-  }
-  .started_bt {
-    width: 170px;
-    float: left;
-  }
-  .buy_bt {
-    width: 170px;
-    float: left;
-  }
-  .taital_main {
-    width: 90%;
-  }
-  .using_text {
-    width: 65%;
-  }
-  .customer_section_2 {
-    width: 90%;
-  }
-  .box_main::after {
-    height: 450px;
-  }
-  #my_slider a.carousel-control-next {
-    right: 53px;
-    top: 430px;
-  }
-  #my_slider a.carousel-control-prev {
-    top: 430px;
-    right: 120px;
-  }
-  .customer_right {
-    margin-top: 25px;
-  }
-  .contact_section_2 {
-    width: 100%;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  #main_slider a.carousel-control-prev {
-    top: 103%;
-  }
-  #main_slider a.carousel-control-next {
-    top: 103%;
-  }
-  .header_section::after {
-    display: none;
-  }
-  .banner_taital {
-    width: 60%;
-    font-size: 40px;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    text-align: center;
-  }
-  .banner_text {
-    width: 80%;
-    font-size: 16px;
-  }
-  .play_icon {
-    margin-top: 30px;
-  }
-  .banner_img {
-    margin-top: 50px;
-  }
-  #banner_slider a.carousel-control-prev {
-    left: -15px;
-    top: 320px;
-  }
-  #banner_slider a.carousel-control-next {
-    right: -15px;
-    top: 320px;
-  }
-  #my_slider a.carousel-control-next {
-    right: 33px;
-    top: 450px;
-  }
-  #my_slider a.carousel-control-prev {
-    left: initial;
-    top: 450px;
-    right: 100px;
-  }
-  .nice-select {
-    margin-top: 20px;
-  }
-  .select_box_section {
-    margin-bottom: 0px;
-  }
-  .blog_taital {
-    font-size: 30px;
-  }
-  .blog_img {
-    margin-top: 10px;
-  }
-  .blog_img img {
-    width: 100%;
-  }
-  .number_text {
-    top: 0px;
-  }
-  .callnow_btn {
-    padding-bottom: 30px;
-  }
-  .about_taital_main {
-    padding: 90px 0px 15px 15px;
-  }
-  .about_text {
-    width: 100%;
-  }
-  .started_bt {
-    width: 140px;
-  }
-  .buy_bt {
-    width: 140px;
-  }
-  .padding_left0 {
-    padding: 0px;
-  }
-  .pricing_taital {
-    font-size: 28px;
-  }
-  .using_text {
-    width: 55%;
-    padding: 20px 0px;
-  }
-  .pricing_box {
-    margin-top: 40px;
-  }
-  .customer_taital {
-    font-size: 30px;
-  }
-  .customer_section_2 {
-    width: 100%;
-  }
-  .box_main {
-    padding: 0px 15px 20px 15px;
-  }
-  .customer_left {
-    width: 30%;
-  }
-  .customer_right {
-    margin-top: 5px;
-    padding-left: 20px;
-  }
-  .customer_section_2 {
-    padding-bottom: 0;
-  }
-  .contact_section_2 {
-    width: 100%;
-    padding-bottom: 70px;
-  }
-  .contact_btn_main {
-    width: 60%;
-  }
-  .send_bt {
-    width: 137px;
-    float: left;
-  }
-  .map_bt {
-    width: 137px;
-    float: left;
-  }
-  .map_bt a {
-    padding: 10px 0px;
-  }
-  .input_main {
+    margin-left: 0;
+    float: none;
     display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
   }
-  .email_text {
-    width: 70%;
-    margin-right: 20px;
+
+  .navbar-brand img {
+    width: 150px;
   }
-  .subscribe_bt a {
-    padding: 8px;
+
+  .navbar-collapse {
+    padding: 10px;
   }
-  .subscribe_bt {
-    width: 170px;
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-  .readmore_btn {
-    margin-top: 20px;
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 8px 15px;
   }
-  .services_box_left {
-    top: 0;
+
+  .nav-item i {
+    font-size: 24px;
+    margin: 10px 10px;
   }
-  .services_box_2 {
-    margin-top: 20px;
-    padding-left: 0;
-    top: 0px;
+
+  .linkcontact {
+    border-right: none;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
   }
-  .fashion_text {
-    font-size: 18px;
-  }
-  .services_box_left {
-    width: 250px;
-  }
-  .services_box_right {
-    width: 250px;
+
+  .user_icon {
+    padding-right: 0;
   }
 }
 
-@media (max-width: 575px) {
-  #main_slider a.carousel-control-prev {
-    top: 103%;
+@media screen and (max-width: 991px) {
+  .logobrancocell img {
+    width: 300px; /* Aumente aqui conforme o tamanho desejado */
+    height: auto; /* Mantém proporção */
   }
-  #main_slider a.carousel-control-next {
-    top: 103%;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 10px 10px;
   }
-  .header_section::after {
-    display: none;
+
+  .navbar-brand img {
+    width: 120px;
   }
+
+  .nav-item i {
+    font-size: 22px;
+  }
+
+  .logobrancocell {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logobrancocell img {
+    width: 250px; /* Aumente aqui conforme o tamanho desejado */
+    height: auto; /* Mantém proporção */
+  }
+}
+
+/* ==================== RESPONSIVIDADE: BANNER ==================== */
+
+/* Responsividade para telas pequenas (smartphones) */
+@media screen and (max-width: 768px) {
   .banner_taital {
-    width: 100%;
-    font-size: 38px;
-  }
-  .banner_text {
-    width: 100%;
-    font-size: 16px;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    text-align: center;
-  }
-  .play_icon {
-    margin-top: 30px;
-  }
-  .banner_img {
-    margin-top: 50px;
-  }
-  #banner_slider a.carousel-control-prev {
-    left: -15px;
-    top: 120px;
-  }
-  #banner_slider a.carousel-control-next {
-    right: -15px;
-    top: 120px;
-  }
-  .select_box_section {
-    margin-bottom: 0px;
-  }
-  .readmore_btn {
-    margin-top: 20px;
-  }
-  .services_box_left {
-    top: 0;
-  }
-  .services_box_2 {
-    margin-top: 20px;
-    padding-left: 0;
-    top: 0px;
-  }
-  .fashion_text {
-    font-size: 18px;
-  }
-  .nice-select {
-    margin-top: 20px;
-  }
-  .blog_taital {
-    font-size: 30px;
-  }
-  .blog_img {
-    margin-top: 10px;
-  }
-  .blog_img img {
-    width: 100%;
-  }
-  .number_text {
-    top: 0px;
-  }
-  .callnow_btn {
-    padding-bottom: 30px;
-  }
-  .about_taital_main {
-    padding: 90px 0px 15px 15px;
-  }
-  .about_text {
-    width: 100%;
-  }
-  .started_bt {
-    width: 140px;
-  }
-  .buy_bt {
-    width: 140px;
-  }
-  .padding_left0 {
-    padding: 0px;
-  }
-  .pricing_taital {
     font-size: 28px;
   }
-  .using_text {
-    width: 55%;
-    padding: 20px 0px;
+
+  .banner_text {
+    font-size: 20px;
+    width: 100%;
   }
-  .pricing_box {
-    margin-top: 40px;
+
+  .started_text a {
+    font-size: 14px;
+    padding: 10px 15px;
   }
+
+  #banner_slider a.carousel-control-prev,
+  #banner_slider a.carousel-control-next {
+    top: 200px;
+  }
+
+  #banner_slider .carousel-control-next,
+  #banner_slider .carousel-control-prev {
+    font-size: 28px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Responsividade para telas menores (celulares) */
+@media screen and (max-width: 480px) {
+  .banner_taital {
+    font-size: 24px;
+  }
+
+  .banner_text {
+    font-size: 18px;
+  }
+
+  .started_text {
+    width: 100%;
+  }
+
+  .started_text a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  #banner_slider .carousel-control-next,
+  #banner_slider .carousel-control-prev {
+    font-size: 26px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ==================== RESPONSIVIDADE: SERVICES ==================== */
+
+/* ==================== RESPONSIVIDADE PARA A SEÇÃO DE SERVIÇOS ==================== */
+/* ==================== RESPONSIVIDADE: SEÇÃO DE SERVIÇOS ==================== */
+
+/* Responsividade para telas menores que 1200px */
+@media screen and (max-width: 1200px) {
+  .services-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espaço entre os blocos */
+  }
+
+  .col-md-4 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0; /* Garante que nada atrapalhe a largura total */
+  }
+
+  .services_taital {
+    font-size: 32px; /* Um pouco menor para telas pequenas */
+  }
+
+  .services_text {
+    font-size: 15px;
+  }
+
+  .readmore_btn {
+    margin: 30px auto 0 auto; /* Centraliza o botão */
+  }
+
+  .col-md-8 {
+    width: 100%; /* Ajusta a largura da segunda coluna para 100% */
+  }
+
+  .services_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+  }
+
+  .services_box_left,
+  .services_box_right {
+    width: 100%; /* Ocupa toda a largura possível */
+    max-width: 400px; /* Limita para não ficar esticado demais */
+    margin: 0; /* Remove qualquer margin lateral */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Pode ajustar */
+  }
+  .services_box_2 {
+    padding-left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .readmore_btn {
+    width: 100%; /* Ajusta o botão para ocupar 100% */
+    text-align: center; /* Centraliza o botão */
+    margin-top: 20px; /* Ajusta o espaçamento */
+  }
+
+  .img-service {
+    width: 8rem; /* Ajusta o tamanho da imagem para telas menores */
+  }
+}
+
+/* Responsividade para telas muito pequenas (como celulares) */
+@media screen and (max-width: 480px) {
+  .services_taital {
+    font-size: 30px; /* Ajusta o tamanho do título */
+  }
+
+  .services_text {
+    font-size: 14px; /* Ajusta o tamanho do texto */
+  }
+
+  .readmore_btn a {
+    font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    padding: 8px; /* Ajusta o padding do botão */
+  }
+
+  .fashion_text {
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+  }
+
+  .services_box_left,
+  .services_box_right {
+    padding: 20px 0; /* Ajusta o padding das caixas */
+  }
+}
+
+/* ==================== RESPONSIVIDADE: SERVICE PAGE ==================== */
+
+/* Responsividade para telas menores (smartphones) */
+@media screen and (max-width: 768px) {
+  /* Ajustando o logo */
+  .logocell {
+    width: 6rem;
+    margin-top: 3rem;
+    margin-bottom: -6rem;
+  }
+
+  /* Ajustando os serviços */
+  .service_item {
+    max-width: 100%; /* Permite que os itens se ajustem */
+    padding: 20px;
+  }
+
+  /* Ajustando os ícones */
+  .bi {
+    font-size: 3rem;
+  }
+
+  .service_item h4 {
+    font-size: 18px;
+  }
+
+  .service_item p {
+    font-size: 14px;
+  }
+
+  .services_highlights {
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 15px;
+  }
+
+  /* FAQ ajustado */
+  .faq-section {
+    padding: 30px 10px;
+  }
+
+  .faq-section h2 {
+    font-size: 26px;
+  }
+
+  .faq-section .btn-link {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  .logocell {
+    width: 5rem;
+    margin-top: 2rem;
+    margin-bottom: -5rem;
+  }
+
+  /* Ajustando os serviços */
+  .service_item {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .service_item h4 {
+    font-size: 16px;
+  }
+
+  .service_item p {
+    font-size: 13px;
+  }
+
+  .bi {
+    font-size: 2.5rem;
+  }
+
+  .services_highlights {
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 10px;
+  }
+
+  .faq-section {
+    padding: 20px;
+  }
+
+  .faq-section h2 {
+    font-size: 24px;
+  }
+
+  .faq-section .btn-link {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* ==================== RESPONSIVIDADE: ABOUT SECTION ==================== */
+
+/* Responsividade para telas menores (smartphones) */
+@media screen and (max-width: 768px) {
+  .about_section {
+    width: 100%; /* Ajusta o tamanho da seção para 100% */
+  }
+
+  .home-about-content {
+    padding-top: 3rem; /* Ajusta o padding superior para telas menores */
+  }
+
+  .home-about-title {
+    font-size: 2rem; /* Reduz o tamanho da fonte */
+    padding-left: 12px; /* Ajusta o padding */
+  }
+
+  .home-about-text {
+    font-size: 1rem; /* Reduz o tamanho da fonte para melhor legibilidade em telas menores */
+  }
+
+  .home-about-img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura disponível */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    margin-bottom: 2rem; /* Adiciona espaçamento inferior para maior legibilidade */
+  }
+
+  .about_text {
+    width: 100%; /* Ajusta a largura para 100% em telas pequenas */
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  .espacobox {
+    flex-direction: column; /* Ajusta os itens para ficarem em coluna */
+    gap: 15px; /* Ajusta o espaço entre os itens */
+  }
+
+  .espacobox > div {
+    flex: 1 1 100%; /* Faz os itens ocuparem toda a largura da tela */
+    min-width: 100%; /* Garante que os itens ocupem 100% da largura */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  .home-about-title {
+    font-size: 1.8rem; /* Ajuste para telas menores */
+  }
+
+  .home-about-text {
+    font-size: 0.9rem; /* Ajuste para melhor legibilidade */
+  }
+
+  .home-about-img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura */
+  }
+
+  .about_text {
+    font-size: 13px; /* Ajusta o tamanho da fonte */
+  }
+
+  .espacobox > div {
+    flex: 1 1 100%; /* Alinha os itens em uma única coluna */
+    min-width: 100%; /* Garante a largura total do item */
+  }
+}
+
+/* ==================== RESPONSIVIDADE: ABOUT SECTION ==================== */
+
+/* Responsividade para telas menores (smartphones) */
+@media screen and (max-width: 768px) {
+  /* Loja Galeria */
+  .loja-galeria {
+    padding: 40px 20px; /* Ajusta o padding para telas menores */
+  }
+
+  .loja-galeria .section-title {
+    font-size: 28px; /* Reduz o tamanho do título */
+  }
+
+  .loja-galeria .gallery-item {
+    height: 200px; /* Ajusta a altura das imagens na galeria */
+    margin-bottom: 15px; /* Adiciona espaço entre as imagens */
+  }
+
+  .loja-galeria .gallery-item img {
+    object-fit: cover; /* Garante que as imagens se ajustem corretamente */
+  }
+
+  /* Destaque Section */
+  .destaque-section {
+    padding: 60px 20px; /* Ajusta o padding */
+  }
+
+  .destaque-title {
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+
+  .destaque-text {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .destaque-img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura */
+    height: auto; /* Ajusta a altura da imagem */
+  }
+
+  /* Quem Somos Section */
+  .quem-somos-section {
+    padding: 60px 20px; /* Ajusta o padding */
+  }
+
+  .quem-somos-section .logocell {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    margin-bottom: 15px; /* Ajusta a margem inferior */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  /* Loja Galeria */
+  .loja-galeria .section-title {
+    font-size: 24px; /* Ajusta o título para telas pequenas */
+  }
+
+  .loja-galeria .gallery-item {
+    height: 180px; /* Reduz a altura das imagens */
+  }
+
+  /* Destaque Section */
+  .destaque-title {
+    font-size: 1.8rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .destaque-text {
+    font-size: 0.9rem; /* Ajusta o tamanho do texto */
+  }
+
+  /* Quem Somos Section */
+  .quem-somos-section {
+    padding: 40px 20px; /* Ajusta o padding */
+  }
+
+  .quem-somos-section .logocell {
+    width: 100%; /* Ajusta o tamanho da imagem */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+  }
+
+  .quem-somos-section .logocell {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* ==================== RESPONSIVIDADE: CUSTOMER SECTION ==================== */
+
+/* Responsividade para telas menores (smartphones) */
+@media screen and (max-width: 768px) {
+  /* Customer Section */
+  .customer_section {
+    margin-bottom: 5rem; /* Ajusta a margem inferior */
+  }
+
   .customer_taital {
-    font-size: 30px;
+    font-size: 28px; /* Reduz o tamanho do título */
   }
+
   .customer_section_2 {
-    width: 100%;
+    width: 90%; /* Aumenta a largura para telas menores */
+    padding-bottom: 40px; /* Ajusta o padding */
   }
+
   .box_main {
-    padding: 0px 15px 20px 15px;
+    padding: 0px 20px 40px 20px; /* Ajusta o padding */
+    margin-bottom: 20px; /* Ajusta o espaçamento entre os boxes */
   }
+
   .customer_left {
-    width: 30%;
+    width: 100%; /* Altera a largura para 100% para dispositivos menores */
+    margin-bottom: 20px; /* Espaço entre a imagem e o texto */
   }
+
+  .customer_img {
+    width: 100px; /* Ajusta o tamanho da imagem */
+    height: 100px; /* Ajusta a altura da imagem */
+  }
+
   .customer_right {
-    margin-top: 5px;
-    padding-left: 20px;
+    width: 100%; /* Altera a largura para 100% */
+    margin-top: 20px; /* Ajusta a margem superior */
   }
+
+  .customer_name {
+    font-size: 20px; /* Ajusta o tamanho da fonte */
+  }
+
+  .enim_text {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    margin-bottom: 20px; /* Ajusta a margem inferior */
+  }
+
+  /* Ajusta o slider */
+  #my_slider a.carousel-control-prev,
+  #my_slider a.carousel-control-next {
+    width: 45px; /* Ajusta o tamanho dos controles do slider */
+    height: 45px;
+    font-size: 30px; /* Ajusta o tamanho da fonte */
+  }
+
+  #my_slider .carousel-control-next,
+  #my_slider .carousel-control-prev {
+    right: 15px;
+    top: 390px; /* Ajusta a posição dos controles */
+  }
+
+  #my_slider .carousel-control-next:hover,
+  #my_slider .carousel-control-prev:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  .customer_taital {
+    font-size: 24px; /* Ajusta o tamanho do título para telas pequenas */
+  }
+
   .customer_section_2 {
-    padding-bottom: 0;
+    width: 100%; /* Ajusta para largura total */
+    padding-bottom: 30px; /* Ajusta o padding inferior */
   }
+
+  .box_main {
+    padding: 0px 15px 30px 15px; /* Ajusta o padding */
+  }
+
+  .customer_left {
+    width: 100%; /* Altera para 100% de largura */
+    margin-bottom: 20px;
+  }
+
+  .customer_img {
+    width: 80px; /* Ajusta o tamanho da imagem */
+    height: 80px; /* Ajusta a altura da imagem */
+  }
+
+  .customer_name {
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+  }
+
+  .enim_text {
+    font-size: 12px; /* Ajusta o tamanho da fonte */
+    margin-bottom: 10px; /* Ajusta a margem inferior */
+  }
+
+  #my_slider a.carousel-control-prev,
+  #my_slider a.carousel-control-next {
+    width: 40px; /* Ajusta os controles */
+    height: 40px;
+    font-size: 25px; /* Ajusta a fonte */
+  }
+
+  #my_slider .carousel-control-next,
+  #my_slider .carousel-control-prev {
+    right: 10px; /* Ajusta a posição dos controles */
+    top: 380px;
+  }
+}
+
+/* ==================== RESPONSIVIDADE: CONTACT SECTION ==================== */
+
+/* Responsividade para telas menores (smartphones) */
+@media screen and (max-width: 768px) {
+  /* Contact Section */
+  .contact_section {
+    margin-top: -8rem; /* Ajusta a margem superior para telas menores */
+  }
+
+  .contact_taital {
+    font-size: 28px; /* Reduz o tamanho do título */
+    text-align: center; /* Garante que o título fique centralizado */
+  }
+
   .contact_section_2 {
-    width: 100%;
-    padding-bottom: 70px;
+    width: 90%; /* Ajusta a largura para 90% em dispositivos menores */
+    padding-bottom: 50px; /* Ajusta o padding inferior */
   }
+
+  .mail_section {
+    width: 100%; /* Ajusta a largura para 100% */
+    margin-top: 20px; /* Ajusta a margem superior */
+  }
+
+  .mail_text {
+    width: 100%; /* Ajusta a largura para 100% */
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    padding: 12px 15px; /* Ajusta o padding */
+    margin-top: 20px; /* Ajusta a margem superior */
+  }
+
+  .massage-bt {
+    width: 100%; /* Ajusta a largura para 100% */
+    height: 100px; /* Ajusta a altura do campo de mensagem */
+    padding: 20px 15px; /* Ajusta o padding */
+    margin-top: 20px; /* Ajusta a margem superior */
+  }
+
   .contact_btn_main {
-    width: 100%;
+    width: 100%; /* Ajusta a largura para 100% */
+    margin: 0 auto; /* Centraliza o botão */
+    text-align: center; /* Garante que o botão fique centralizado */
   }
+
   .send_bt {
-    width: 137px;
-    float: left;
+    width: 100%; /* Ajusta a largura para 100% */
+    float: none; /* Remove o float */
+    margin-bottom: 20px; /* Ajusta a margem inferior */
   }
+
+  .send_bt a,
+  button {
+    width: 100%; /* Ajusta a largura para 100% */
+    text-align: center; /* Centraliza o texto */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    padding: 12px; /* Ajusta o padding */
+    margin-top: 20px; /* Ajusta a margem superior */
+  }
+
   .map_bt {
-    width: 137px;
-    float: left;
+    width: 100%; /* Ajusta a largura para 100% */
+    float: none; /* Remove o float */
+    margin-left: 0; /* Remove a margem esquerda */
   }
+
   .map_bt a {
-    padding: 10px 0px;
+    width: 100%; /* Ajusta a largura para 100% */
+    text-align: center; /* Centraliza o texto */
+    padding: 12px 30px; /* Ajusta o padding */
   }
-  .input_main {
+
+  .map_main {
+    width: 100%; /* Ajusta a largura para 100% */
+    padding-top: 30px; /* Ajusta o padding superior */
+    display: block; /* Altera para block para centralizar o conteúdo */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  .contact_taital {
+    font-size: 22px; /* Reduz ainda mais o tamanho do título */
+  }
+
+  .contact_section_2 {
+    width: 100%; /* Ajusta para largura total */
+    padding-bottom: 30px; /* Ajusta o padding inferior */
+  }
+
+  .mail_text {
+    font-size: 12px; /* Reduz o tamanho da fonte */
+    padding: 10px 15px; /* Ajusta o padding */
+  }
+
+  .massage-bt {
+    height: 80px; /* Ajusta a altura */
+    padding: 15px 15px; /* Ajusta o padding */
+  }
+
+  .send_bt a,
+  button {
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    padding: 10px; /* Ajusta o padding */
+  }
+
+  .map_bt a {
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    padding: 10px 20px; /* Ajusta o padding */
+  }
+}
+
+/* ==================== RESPONSIVIDADE: FOOTER SECTION ==================== */
+
+/* Responsividade para telas menores (smartphones) */
+@media screen and (max-width: 768px) {
+  /* Footer */
+  .footer_section {
+    padding-bottom: 40px; /* Ajusta o padding inferior para telas menores */
+  }
+
+  .footer_logo {
+    text-align: center; /* Centraliza o logo */
+    margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  .footer_logo img {
+    width: 150px; /* Ajusta o tamanho do logo para telas menores */
+    height: auto;
+  }
+
+  .footer_section_2 {
+    padding-top: 30px; /* Ajusta o padding superior */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .useful_text {
+    font-size: 24px; /* Reduz o tamanho da fonte */
+  }
+
+  .footer_text {
+    font-size: 14px; /* Ajusta o tamanho da fonte do texto */
+    padding-top: 10px; /* Ajusta o padding */
+  }
+
+  .footer_menu ul {
+    display: flex; /* Alinha os itens em uma linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha se necessário */
+    justify-content: center; /* Centraliza os itens */
+  }
+
+  .footer_menu li {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    margin: 10px; /* Adiciona espaço entre os itens */
+  }
+
+  .footer_menu li a {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .social_icon ul {
+    display: flex; /* Alinha os ícones em linha */
+    justify-content: center; /* Centraliza os ícones */
+    padding: 0;
+  }
+
+  .social_icon li {
+    margin-right: 10px; /* Espaço entre os ícones */
+  }
+
+  .social_icon li a {
+    font-size: 20px; /* Reduz o tamanho dos ícones sociais */
+    padding: 10px 15px; /* Ajusta o padding dos ícones */
+    width: 40px; /* Reduz a largura dos ícones */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  .footer_section {
+    padding-bottom: 20px; /* Ajusta o padding inferior */
+  }
+
+  .footer_logo img {
+    width: 120px; /* Reduz ainda mais o tamanho do logo */
+  }
+
+  .useful_text {
+    font-size: 20px; /* Reduz ainda mais o tamanho da fonte */
+    padding-top: 20px; /* Ajusta o padding superior */
+  }
+
+  .footer_menu li {
+    font-size: 12px; /* Reduz o tamanho da fonte */
+    margin: 5px; /* Ajusta o espaço entre os itens */
+  }
+
+  .footer_menu li a {
+    font-size: 12px; /* Ajusta o tamanho da fonte */
+  }
+
+  .social_icon li a {
+    font-size: 18px; /* Ajusta o tamanho dos ícones sociais */
+    padding: 10px; /* Ajusta o padding */
+    width: 35px; /* Ajusta o tamanho dos ícones */
+  }
+
+  .footer_text {
+    font-size: 12px; /* Ajusta o tamanho da fonte para texto */
+  }
+}
+
+.custom-navbar-toggle {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Ícone estilo hambúrguer */
+.toggle-icon {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.toggle-icon::before {
+  top: -10px;
+}
+
+.toggle-icon::after {
+  top: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1200px) {
+  .custom-navbar-toggle {
     display: block;
   }
-  .email_text {
-    width: 100%;
-    margin-right: 0px;
-  }
-  .subscribe_bt {
-    margin-top: 20px;
-  }
-  .subscribe_bt a {
-    padding: 8px;
-  }
-  .subscribe_bt {
-    width: 170px;
+}
+
+/* Oculta fora do mobile */
+@media screen and (min-width: 992px) {
+  .custom-navbar-toggle {
+    display: none;
   }
 }
