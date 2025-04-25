@@ -3,28 +3,45 @@
   <head>
     <!-- basic -->
 
-   <!-- Meta tags padrão -->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Descrição do seu site aqui - com até 160 caracteres." />
-<meta name="keywords" content="palavra-chave1, palavra-chave2, palavra-chave3" />
-<meta name="author" content="Seu Nome ou Empresa" />
+    <!-- Meta tags padrão -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descrição do seu site aqui - com até 160 caracteres."
+    />
+    <meta
+      name="keywords"
+      content="palavra-chave1, palavra-chave2, palavra-chave3"
+    />
+    <meta name="author" content="Seu Nome ou Empresa" />
 
-<!-- Meta Open Graph -->
-<meta property="og:title" content="Título do seu site ou página" />
-<meta property="og:description" content="Uma descrição atrativa do conteúdo da página." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.seusite.com.br/sua-pagina" />
-<meta property="og:image" content="https://www.seusite.com.br/imagem.jpg" />
-<meta property="og:locale" content="pt_BR" />
+    <!-- Meta Open Graph -->
+    <meta property="og:title" content="Pedrofone - Telemóveis e Acessórios" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.pedrofone.pt" />
+    <meta
+      property="og:image"
+      content="https://pedrofone.pt/images/LOGO-CELL-TRANSPARENTE.png"
+    />
+    <meta property="og:locale" content="pt_PT" />
 
-<!-- Meta Twitter Card (opcional, mas recomendado) -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Título da sua página no Twitter" />
-<meta name="twitter:description" content="Descrição resumida para o Twitter" />
-<meta name="twitter:image" content="https://www.seusite.com.br/imagem.jpg" />
+    <!-- Meta Twitter Card (opcional, mas recomendado) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pedrofone - Iphones, Assistencia Técnica."
+    />
+    <meta
+      name="twitter:description"
+      content="Iphones novos e Recondicionados"
+    />
+    <meta
+      name="twitter:image"
+      content="https://pedrofone.pt/LOGO-CELL-TRANSPARENTE.png"
+    />
 
-    
     <title>PedroFone</title>
 
     <!-- bootstrap css -->
@@ -53,13 +70,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-   <div class="header_section">
+    <div class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html"
-            ><img src="images/logo.png"
+          <a class="navbar-brand logobrancocell" href="index.html"
+            ><img src="images/logo-branco.png"
           /></a>
           <button
             class="navbar-toggler"
@@ -75,17 +97,28 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.html">Sobre</a>
               </li>
-            
+
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link linkcontact" href="contact.html">Contatos</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="mailto:geral@pedrofone.pt"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="https://wa.me/351910086001"
+                  ><i class="fab fa-whatsapp" aria-hidden="true"></i
+                ></a>
               </li>
             </ul>
-           
           </div>
         </nav>
       </div>
@@ -94,55 +127,85 @@
 
       <!-- Contato -->
 
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
-         <section class="mt-5 text-center">
-            <h2 class="services_taital">Fale Conosco Agora</h2>
-            <a
-              href="https://wa.me/910 086 001"
-              class="btn btn-success m-2"
-              target="_blank"
-            >
-              <i class="fa fa-whatsapp"></i> WhatsApp
-            </a>
-          </section>
-        <div class="container">
-          <div class="row">
+         <!-- contact section start -->
+    <div class="contact_section layout_padding">
+      <section class="mt-5 text-center">
+        <h2 class="services_taital">Fale Conosco Agora</h2>
+        <a
+          href="https://wa.me/351910086001"
+          class="btn btn-success m-2"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </section>
+      <div class="container">
+        <div class="row">
           <div class="contact_section_2">
             <div class="row">
               <div class="col-md-12">
                 <div class="mail_section map_form_container">
-                  <form action="https://formsubmit.co/geral@pedrofone.pt" method="POST">
-                    <input type="text" class="mail_text" placeholder="Seu Nome" name="name" required />
-                    <input type="email" class="mail_text" placeholder="Seu Email" name="email" required />
-                    <textarea class="massage-bt" placeholder="Mensagem" rows="5" name="message" required></textarea>
-                  
-                    <!-- Configurações extras -->
-                    <input type="hidden" name="_next" value="about:blank">
+                  <form
+                    action="https://formsubmit.co/geral@pedrofone.pt"
+                    method="POST"
+                  >
+                    <input
+                      type="text"
+                      class="mail_text"
+                      placeholder="Seu Nome"
+                      name="name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      class="mail_text"
+                      placeholder="Seu Email"
+                      name="email"
+                      required
+                    />
+                    <textarea
+                      class="massage-bt"
+                      placeholder="Mensagem"
+                      rows="5"
+                      name="message"
+                      required
+                    ></textarea>
 
-                    
-                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Configurações extras -->
+                    <input type="hidden" name="_next" value="about:blank" />
+
+                    <input type="hidden" name="_captcha" value="false" />
                     <!-- Botões -->
                     <div class="contact_btn_main">
-                      <button  class="send_bt active" type="submit" >Enviar</button>
-                      <div class="map_bt"><a href="#" id="showMap">Mapa</a></div>
+                      <button class="send_bt active" type="submit">
+                        Enviar
+                      </button>
+                      <div class="map_bt">
+                        <a href="#" id="showMap">Mapa</a>
+                      </div>
                     </div>
-
-                    
                   </form>
-                  
+
                   <script>
-                    document.querySelector("form").addEventListener("submit", function () {
-                      setTimeout(function () {
-                        window.location.href = "index.html#sucesso";
-                      }, 1000); // espera 1 segundo antes de redirecionar
-                    });
+                    document
+                      .querySelector("form")
+                      .addEventListener("submit", function () {
+                        setTimeout(function () {
+                          window.location.href = "index.html#sucesso";
+                        }, 1000); // espera 1 segundo antes de redirecionar
+                      });
                   </script>
-                  
+
                   <div class="map_main map_container">
                     <div class="map-responsive">
                       <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6073.210240015243!2d-8.418119885159342!3d41.21235346396309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24895fe1ae29df%3A0x710cb7b68cea2016!2sPedrofone!5e1!3m2!1spt-BR!2sus!4v1745362690412!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6073.210240015243!2d-8.418119885159342!3d41.21235346396309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24895fe1ae29df%3A0x710cb7b68cea2016!2sPedrofone!5e1!3m2!1spt-BR!2sus!4v1745362690412!5m2!1spt-BR!2sus"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
                         width="600"
                         height="368"
                         frameborder="0"
@@ -164,11 +227,44 @@
           </div>
         </div>
       </div>
-       <!-- contact section end -->
+      <!-- contact section end -->
     </div>
 
     <!-- services section end -->
 
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="./js/carousel.js" defer></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script>
+      // Material Select Initialization
+      $(document).ready(function () {
+        $(".mdb-select").materialSelect();
+        $(".select-wrapper.md-form.md-outline input.select-dropdown").bind(
+          "focus blur",
+          function () {
+            $(this)
+              .closest(".select-outline")
+              .find("label")
+              .toggleClass("active");
+            $(this)
+              .closest(".select-outline")
+              .find(".caret")
+              .toggleClass("active");
+          }
+        );
+      });
+    </script>
+    <!--contact section end -->
     <!-- footer section start -->
     <div class="footer_section layout_padding">
       <div class="container">
@@ -192,84 +288,67 @@
                 </ul>
               </div>
             </div>
-         
+
             <div class="col-lg-3 col-sm-6">
               <h2 class="useful_text">Entre em Contato</h2>
               <div class="location_text">
-                <img src="images/call-icon.png" /><span
-                  class="padding_left_15"
-                  ><a href="#">910 086 001</a></span
+                <img src="images/call-icon.png" /><span class="padding_left_15"
+                  ><a href="tel=351910086001">910 086 001</a></span
                 >
               </div>
               <div class="location_text">
-                <img src="images/mail-icon.png" /><span
-                  class="padding_left_15"
-                  ><a href="#">geral@pedrofone.pt</a></span
+                <img src="images/mail-icon.png" /><span class="padding_left_15"
+                  ><a href="mailto:geral@pedrofone.pt"
+                    >geral@pedrofone.pt</a
+                  ></span
                 >
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
               <h2 class="useful_text">Minhas Redes Sociais</h2>
-              <p class="footer_text">
-                Acesse os nossos perfis
-              </p>
+              <p class="footer_text">Acesse os nossos perfis</p>
               <div class="social_icon">
                 <ul>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    <a href="https://www.facebook.com/pedrofone.pt"
+                      ><i class="fab fa-facebook" aria-hidden="true"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    <a href="https://www.instagram.com/pedrofone2025"
+                      ><i class="fab fa-instagram" aria-hidden="true"></i
                     ></a>
                   </li>
                 </ul>
               </div>
-
-              
             </div>
 
             <div class="col-lg-3 col-sm-6">
-              <h2 class="useful_text"> - Atenção</h2>
+              <h2 class="useful_text">- Atenção</h2>
               <div class="location_text">
-                <span
-                  class="padding_left_15"
-                  ><a href="#">
-                    Termos e condições</a></span
+                <span class="padding_left_15"
+                  ><a href="#"> Termos e condições</a></span
                 >
               </div>
               <div class="location_text">
-                <span
-                  class="padding_left_15"
-                  ><a href="#">
-                    Política de Privacidade</a></span
+                <span class="padding_left_15"
+                  ><a href="#"> Política de Privacidade</a></span
                 >
               </div>
 
               <div class="location_text">
-                <span
-                  class="padding_left_15"
-                  ><a href="https://www.cniacc.pt/pt/">Centro de litígios</a></span
+                <span class="padding_left_15"
+                  ><a href="https://www.cniacc.pt/pt/"
+                    >Centro de litígios</a
+                  ></span
                 >
               </div>
 
               <div class="location_text">
-                <span
-                  class="padding_left_15"
+                <span class="padding_left_15"
                   ><a href="https://www.livroreclamacoes.pt/INICIO/">
-                    Livro de reclamações</a></span
+                    Livro de reclamações</a
+                  ></span
                 >
               </div>
             </div>
@@ -277,14 +356,63 @@
         </div>
       </div>
       <div class="cofinanciado1">
-        <img src="./images/imagem-compete-1024x127.png" alt="Reconhecidos por" />
+        <img
+          src="./images/imagem-compete-1024x127.png"
+          alt="Reconhecidos por"
+        />
       </div>
     </div>
+
     <!-- footer section end -->
+    <!-- Mensagem de sucesso -->
+    <div id="mensagemEnviada">
+      ✅ Sua mensagem foi enviada com sucesso! Obrigado pelo contato.
+    </div>
+    <style>
+      #mensagemEnviada {
+        display: none;
+        position: fixed;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        padding: 16px 24px;
+        border-radius: 8px;
+        font-weight: 500;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        z-index: 9999;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+      }
 
+      #mensagemEnviada.mostrar {
+        display: block;
+      }
+    </style>
 
-  
-    <!-- copyright section end -->
+    <script>
+      const msg = document.getElementById("mensagemEnviada");
+
+      // Mostra a mensagem se tiver #sucesso na URL
+      if (window.location.hash === "#sucesso") {
+        msg.classList.add("mostrar");
+
+        // Fecha ao clicar na mensagem
+        msg.addEventListener("click", () => {
+          msg.style.display = "none";
+        });
+
+        // Ou fecha ao clicar em qualquer lugar do site
+        document.addEventListener("click", (e) => {
+          if (e.target !== msg) {
+            msg.style.display = "none";
+          }
+        });
+      }
+    </script>
+
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
