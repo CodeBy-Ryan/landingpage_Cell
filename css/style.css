@@ -1289,7 +1289,7 @@ button {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .item {
     flex-direction: column;
     text-align: center;

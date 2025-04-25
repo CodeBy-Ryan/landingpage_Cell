@@ -278,7 +278,7 @@ body {
 }
 
 /* Responsividade para telas muito pequenas (como celulares) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .services_taital {
     font-size: 30px; /* Ajusta o tamanho do título */
   }
@@ -670,7 +670,7 @@ body {
 /* ==================== RESPONSIVIDADE: CONTACT SECTION ==================== */
 
 /* Responsividade para telas menores (smartphones) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   /* Contact Section */
   .contact_section {
     margin-top: -8rem; /* Ajusta a margem superior para telas menores */
